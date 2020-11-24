@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EIRnAFNnrjSKRhBlamzHX/+csdzvHL/0fMO7CzFnBrsS4B3rGf80ZgPvctuD0cd4YearitpZVowqHXRzu7Y3AQ==",
+  "dgSpecHash": "G2RBUVQ12R7w1u7t0O9+skBvxLoQ0hrmOCuWbHUOYrJ6ql5PpvyCyFGGWxciNFI1bFshh6heC/EikPFmbxTiow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\George\\Documents\\GIWeb\\GIWeb\\GIWeb\\GIWeb.csproj",
+  "projectFilePath": "C:\\Users\\George\\Documents\\GIWeb\\GIWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\George\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.6\\microsoft.aspnetcore.authorization.3.1.6.nupkg.sha512",
     "C:\\Users\\George\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.6\\microsoft.aspnetcore.components.3.1.6.nupkg.sha512",

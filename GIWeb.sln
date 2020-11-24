@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GIWeb", "GIWeb\GIWeb.csproj", "{4BEC542C-04BE-402A-BC89-91781B78E096}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GIWeb", "GIWeb.csproj", "{4BEC542C-04BE-402A-BC89-91781B78E096}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1642,11 +1642,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\George\\Documents\\GIWeb\\GIWeb\\GIWeb\\GIWeb.csproj",
+      "projectUniqueName": "C:\\Users\\George\\Documents\\GIWeb\\GIWeb.csproj",
       "projectName": "GIWeb",
-      "projectPath": "C:\\Users\\George\\Documents\\GIWeb\\GIWeb\\GIWeb\\GIWeb.csproj",
+      "projectPath": "C:\\Users\\George\\Documents\\GIWeb\\GIWeb.csproj",
       "packagesPath": "C:\\Users\\George\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\George\\Documents\\GIWeb\\GIWeb\\GIWeb\\obj\\",
+      "outputPath": "C:\\Users\\George\\Documents\\GIWeb\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\George\\AppData\\Roaming\\NuGet\\NuGet.Config",
