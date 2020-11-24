@@ -178,7 +178,6 @@ C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\Razor\_Imports.razor.g.
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\GIWeb.RazorTargetAssemblyInfo.cache
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\GIWeb.csproj.CopyComplete
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\blazor\unlinked.output
-C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\pkmBg21mdrqlRrkMbL_8qnfDmpm8qU-JShLwsHZxdi4=.hash
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\99dseBOagY3mzu5Y8Eqm8gRI_o8QbbCp7R2Ew9bQ_5E=.hash
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\ZxXy75PYbzJxNfAc-SAP1nUYm4gt1jSaOpFnBb9m85M=.hash
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\BaZPMj95_YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=.hash
@@ -230,13 +229,11 @@ C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\_kkwUt5LUrFrn
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\rvTW0d54uLW0iDMAX30lpmr9f8uHoS3YYkEU5zNGhyc=.hash
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\LqwA2Rpm96Ualk0IhLZar87kfRCyKHzHTeTt2jYhm7M=.hash
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\czNf3btAeBW-vvID5LAfgcsNZ_GM3ssVuPaMflcg0rs=.hash
-C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\Q7Ho7UhLBvvi5Q534C34EyS4zr7ayWWvRbw_zB26x1E=.hash
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=.hash
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\3S0qzYaBEKOBXarzVLNzNAFXlwJr6nI3lFlYUpQTPH8=.hash
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\UC-3Rm1NkdNdlIrzYARo_dO-HDlS5mhPxo0IQv7kma8=.hash
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\SPHS1EAPAcMFN4TEIUYl3FWtoCQTsNJch0XVGgok1eE=.hash
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\blazor\blazor.boot.json
-C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\PvTfgshulh9wQhuv-Riauj4s-8IMALdo9-m7j8Sn0JE=.hash
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\compressed\_framework\_bin\GIWeb.dll.gz
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Net.Http.Json.dll.gz
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Buffers.dll.gz
@@ -357,3 +354,8 @@ C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\staticwebassets\GIWeb.S
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\staticwebassets\GIWeb.StaticWebAssets.xml
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\GIWeb.dll
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\GIWeb.pdb
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\RazorDeclaration\Pages\MaxicomTest.razor.g.cs
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\Razor\Pages\MaxicomTest.razor.g.cs
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\b5yEPT6Bb8L_cRp0dOrhFub4_gIYEyhLqRa-ipG5gYk=.hash
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\ZzQp1X3Xv2lEPyAX7vic3b2GFDls6icGjN4A6S988dg=.hash
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\LSQZekn6qvbI0T3g1ubZ1Jwos95_bxs00IHIKwx-x3g=.hash

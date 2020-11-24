@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "GIWeb.dll": "sha256-pkmBg21mdrqlRrkMbL+8qnfDmpm8qU\/JShLwsHZxdi4=",
+      "GIWeb.dll": "sha256-b5yEPT6Bb8L+cRp0dOrhFub4+gIYEyhLqRa\/ipG5gYk=",
       "System.Net.Http.Json.dll": "sha256-99dseBOagY3mzu5Y8Eqm8gRI+o8QbbCp7R2Ew9bQ+5E=",
       "System.Buffers.dll": "sha256-ZxXy75PYbzJxNfAc\/SAP1nUYm4gt1jSaOpFnBb9m85M=",
       "mscorlib.dll": "sha256-BaZPMj95+YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=",
@@ -60,7 +60,7 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-czNf3btAeBW\/vvID5LAfgcsNZ+GM3ssVuPaMflcg0rs="
     },
     "pdb": {
-      "GIWeb.pdb": "sha256-Q7Ho7UhLBvvi5Q534C34EyS4zr7ayWWvRbw+zB26x1E="
+      "GIWeb.pdb": "sha256-ZzQp1X3Xv2lEPyAX7vic3b2GFDls6icGjN4A6S988dg="
     },
     "runtime": {
       "dotnet.3.2.0.js": "sha256-mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=",
