@@ -1,24 +1,13 @@
 ﻿@inherits LayoutComponentBase
 
-@*<div class="sidebar">
-    <NavMenu />
-</div>*@
-
 <div class="main">
+    <div class="header-content">
+        <TopMainNav></TopMainNav>
+    </div>
     <div class="content px-4">
         @Body
     </div>
     <div>
-        <footer>
-            <section class="page_copyright ds s-py-10 copyright-bg mt-10">
-                <div class="row align-items-center">
-                    <div class="divider-15 d-none d-lg-block"></div>
-                    <div class="col-md-12 text-center">
-                        <p>&copy; Copyright <span class="copyright_year">2019</span> All Rights Reserved</p>
-                    </div>
-                    <div class="divider-15 d-none d-lg-block"></div>
-                </div>
-            </section>
-        </footer>
+        <MainFooter></MainFooter>
     </div>
 </div>

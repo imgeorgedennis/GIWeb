@@ -1,0 +1,35 @@
+﻿<div class="row" style="@GetDebug() @GetPadding()">
+    @ChildContent
+</div>
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public bool Debug { get; set; } = false;
+
+    [Parameter]
+    public string Padding { get; set; }
+
+    private string GetDebug()
+    {
+        if (Debug)
+        {
+
+            return "border-style:solid;border-width:1px;";
+        }
+
+        return "";
+    }
+
+    private string GetPadding()
+    {
+        if (Padding != null)
+        {
+            return "Padding: " + Padding;
+        }
+
+        return "Padding: 20";
+    }
+}

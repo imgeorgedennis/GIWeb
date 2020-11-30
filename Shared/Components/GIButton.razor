@@ -1,0 +1,60 @@
+﻿
+<button class="woocommerce-Button btn btn-@GetColour() p-@Padding m-@Margin @CustomClass" id="@Id" style="width:@Width" @onclick="ButtonClick"><span>@ButtonText</span></button>
+
+@code {
+
+    [Parameter]
+    public string CustomClass { get; set; }
+
+    [Parameter]
+    public string Href { get; set; }
+
+    [Parameter]
+    public string Id { get; set; }
+    [Parameter]
+    public string ButtonText { get; set; }
+
+    [Parameter]
+    public EventCallback OnClickEvent { get; set; }
+
+    [Parameter]
+    public string Width { get; set; } = "100px";
+
+    [Parameter]
+    public string Padding { get; set; } = "0";
+
+    [Parameter]
+    public string Margin { get; set; } = "0";
+
+    [Parameter]
+    public ButtonColour Colour { get; set; } = ButtonColour.Purple;
+
+    private async Task ButtonClick()
+    {
+        await OnClickEvent.InvokeAsync(null);
+    }
+
+    private string GetColour()
+    {
+        switch (Colour)
+        {
+            case ButtonColour.Purple:
+                return "maincolor";
+                break;
+            case ButtonColour.Blue:
+                return "maincolor2";
+                break;
+            case ButtonColour.Green:
+                return "maincolor3";
+                break;
+        }
+        return "maincolor";
+    }
+
+    public enum ButtonColour
+    {
+        Blue,
+        Purple,
+        Green
+    }
+}

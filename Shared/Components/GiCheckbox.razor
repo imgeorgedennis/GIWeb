@@ -1,0 +1,24 @@
+﻿
+@if (IsChecked)
+{
+<label class="woocommerce-form__label woocommerce-form__label-for-checkbox inline">
+    <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="@Text" checked type="checkbox" id="@Id" value="@IsChecked">
+    <span>@Text</span>
+</label> }
+else
+{
+<label class="woocommerce-form__label woocommerce-form__label-for-checkbox inline">
+    <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="@Text" type="checkbox" id="@Id" value="@IsChecked ">
+    <span>@Text</span>
+</label>    }
+
+@code
+{ public string Text { get; set; }
+    public string Id { get; set; }
+    public bool IsChecked { get; set; } = false;
+
+    public bool GetValue()
+    {
+        return IsChecked;
+    }
+}

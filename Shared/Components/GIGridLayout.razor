@@ -1,0 +1,56 @@
+﻿<div class="container border-danger" style="@GetDebug()">
+    @ChildContent
+</div>
+
+@code{
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public string Width { get; set; } = "";
+
+    [Parameter]
+    public string Height { get; set; } = "";
+
+    [Parameter]
+    public Alignment Align { get; set; } = Alignment.Left;
+
+    [Parameter]
+    public bool Debug { get; set; } = false;
+
+    private string GetAlignment()
+    {
+        switch (Align)
+        {
+            case Alignment.Left:
+                return "float-left";
+                break;
+            case Alignment.Center:
+                return "float-none";
+                break;
+            case Alignment.Right:
+                return "float-right";
+                break;
+        }
+        return "";
+    }
+
+    private string GetDebug()
+    {
+        if (Debug)
+        {
+
+            return "border-style:solid;border-width:1px;";
+        }
+
+        return "";
+    }
+
+    public enum Alignment
+    {
+        Center,
+        Left,
+        Right
+    }
+}
