@@ -1,0 +1,59 @@
+﻿
+<GIGridLayout>
+    <GIGridRow>
+        <GIGridColumn Width="3"></GIGridColumn>
+        <GIGridColumn CustomClass="text-center" Width="6">
+            <GIInput @ref="Email" Id="i1" Placeholder="Email" Align="GIInput.Alignment.Center" BottomMargin="3"></GIInput>
+            <GIInput @ref="Password" Id="i2" Placeholder="Password" Align="GIInput.Alignment.Center"></GIInput>
+            <div>
+                <a href="/resetpassword" target="_blank" class="float-left ml-1 mt-3">Forgot password?</a>
+                <GIButton ButtonText="Sign in" OnClickEvent="@AttemptSignIn" Width="150px" Colour="GIButton.ButtonColour.Green" CustomClass="mr-1 float-right"></GIButton>
+            </div>
+        </GIGridColumn>
+        <GIGridColumn Width="3"></GIGridColumn>
+    </GIGridRow>
+    <div style="margin-left: 25%; margin-right:25%;">
+        <hr />
+    </div>
+    <GIGridRow>
+        <GIGridColumn Width="3"></GIGridColumn>
+        <GIGridColumn CustomClass="text-center" Width="6">
+            <label class="float-left mt-4 ml-1">Don't have an account?</label>
+            <a href="/register" style="width:150px;" class="woocommerce-Button btn btn-maincolor float-right mr-1 mt-1" role="button"><span>Create Account</span></a>
+        </GIGridColumn>
+        <GIGridColumn Width="3"></GIGridColumn>
+    </GIGridRow>
+</GIGridLayout>
+
+@code {
+
+    GIInput Email, Password;
+
+    public void AttemptSignIn()
+    {
+
+        Console.WriteLine("Attempting to signin with credienials: Email= " + Email.GetValue() + " - Password= " + Password.GetValue());
+
+        LoginRequest request = new LoginRequest();
+
+        if (Email.GetValue() != null && Email.GetValue().ToString().Contains("@"))
+        {
+            request.Email = Email.GetValue();
+            request.Password = Password.GetValue();
+
+            // Send login request
+        }
+    }
+
+    //protected override async Task OnInitializedAsync()
+    //{
+
+    //}
+
+    public class LoginRequest
+    {
+        public string Email { get; set; }
+        public string Password { get; set; }
+    }
+
+}

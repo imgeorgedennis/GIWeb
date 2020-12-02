@@ -1,58 +1,18 @@
-﻿@page "/login"
-@using GIWeb.Shared.Components 
+﻿@page "/componenttest"
+@using GIWeb.Shared.Components
+
 
 <div class="container">
 
-    @*<GIButton OnClickEvent="ShowModal" Id="3" ButtonText="Open Modal"></GIButton>*@
+    <GIInput Width="200px;" ShowLabel="true" LabelText="Test label:" TopMargin="0"></GIInput>
 
-    <GIGridLayout>
-        <GIGridRow>
-            <GIGridColumn Width="3"></GIGridColumn>
-            <GIGridColumn CustomClass="text-center" Width="6">
-                <GIInput @ref="Email" Id="i1" Placeholder="Email" Align="GIInput.Alignment.Center" BottomMargin="3"></GIInput>
-                <GIInput @ref="Password" Id="i2" Placeholder="Password" Align="GIInput.Alignment.Center"></GIInput>
-                <div>
-                    <a href="/shop-account-password-reset.html" target="_blank" class="float-left ml-1 mt-3">Forgot password?</a>
-                    <GIButton ButtonText="Sign in" OnClickEvent="@AttemptSignIn" Width="150px" Colour="GIButton.ButtonColour.Green" CustomClass="mr-1 float-right"></GIButton>
-                </div>
-            </GIGridColumn>
-            <GIGridColumn Width="3"></GIGridColumn>
-        </GIGridRow>
-        <div style="margin-left: 25%; margin-right:25%;">
-            <hr />
-        </div>
-        <GIGridRow>
-            <GIGridColumn Width="3"></GIGridColumn>
-            <GIGridColumn CustomClass="text-center" Width="6">
-                <label class="float-left mt-4 ml-1">Don't have an account?</label>
-                <a href="/register" style="width:150px;" class="woocommerce-Button btn btn-maincolor float-right mr-1 mt-1" role="button"><span>Create Account</span></a>
-            </GIGridColumn>
-            <GIGridColumn Width="3"></GIGridColumn>
-        </GIGridRow>
-    </GIGridLayout>
+    <GIButton ButtonText="Test Button" Width="150px;"></GIButton>
+
+    <GILogin></GILogin>
+
+    <GIRegister></GIRegister>
+
 </div>
-
 @code {
 
-    GIInput Email, Password;
-
-    public void AttemptSignIn()
-    {
-        Console.WriteLine("Attempting to signin with credienials: Email= " + Email.GetValue() + " - Password= " + Password.GetValue());
-    }
-
-    public void ButtonClick()
-    {
-        Console.WriteLine("DONG!!");
-    }
-
-    public void PrintOnChange(string text)
-    {
-        Console.WriteLine(text.ToString());
-    }
-
-    //protected override async Task OnInitializedAsync()
-    //{
-
-    //}
 }

@@ -1,10 +1,14 @@
-﻿<div class="row" style="@GetDebug() @GetPadding()">
+﻿<div class="row @CustomClass" style="@GetDebug() @GetPadding()">
     @ChildContent
 </div>
 
 @code {
+
     [Parameter]
     public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public String CustomClass { get; set; }
 
     [Parameter]
     public bool Debug { get; set; } = false;
@@ -16,10 +20,8 @@
     {
         if (Debug)
         {
-
             return "border-style:solid;border-width:1px;";
         }
-
         return "";
     }
 
@@ -29,7 +31,6 @@
         {
             return "Padding: " + Padding;
         }
-
         return "Padding: 20";
     }
 }

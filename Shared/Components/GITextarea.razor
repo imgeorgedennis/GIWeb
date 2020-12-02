@@ -24,6 +24,11 @@
     [Parameter]
     public bool IsResizeable { get; set; }
 
+    public string GetValue()
+    {
+        return Text;
+    }
+
     public string SetIsResizeable()
     {
         switch (IsResizeable)

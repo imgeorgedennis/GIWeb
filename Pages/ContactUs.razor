@@ -1,0 +1,84 @@
+﻿@page "/contactus"
+@using GIWeb.Shared.Components
+
+<GIGridLayout>
+    <GIGridRow>
+        <GIGridColumn Width="3"></GIGridColumn>
+        <GIGridColumn Width="8">
+            <div class="item-content">
+                <div class="contact-item animate animated scaleAppear" data-animation="scaleAppear">
+                    <h3>Contact Us locally</h3>
+                    <div class="media">
+                        <span class="strong">E-mail:</span>
+                        <div class="media-body">
+                            support@gosportinternet.co.uk
+                        </div>
+                    </div>
+                    <div class="media mt-10">
+                        <span class="strong">Phone:</span>
+                        <div class="media-body">
+                            800-123-45-67
+                        </div>
+                    </div>
+                    <div class="media mt-10">
+                        <span class="strong">Days:</span>
+                        <div class="media-body">
+                            MON - FRI
+                        </div>
+                    </div>
+                    <div class="media mt-10">
+                        <span class="strong">Hours:</span>
+                        <div class="media-body">
+                            9AM - 5PM
+                        </div>
+                    </div>
+                    <div class="d-block d-lg-none divider-30"></div>
+                    <div class="d-none d-lg-block divider-70"></div>
+                    <form class="contact-form c-mb-20 c-gutter-20" method="post" action="/">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <label class="ml-2">Full Name </label>
+                                <GIInput @ref="Fullname" TopMargin="0;" BottomMargin="0;"></GIInput>
+                            </div>
+                            <div class="col-sm-5">
+                                <label class="ml-2">Phone Number</label>
+                                <GIInput @ref="Phonenumber" TopMargin="0;" BottomMargin="0;"></GIInput>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <label class="ml-2">Email address</label>
+                                <GIInput @ref="Email" TopMargin="0;"></GIInput>
+                            </div>
+                            <div class="col-sm-10">
+                                <GITextarea Columns="45" Rows="6" IsResizeable="false"></GITextarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 text-center text-md-left mt-10">
+                                <div class="form-group">
+                                    <GIButton ButtonText="Submit" Colour="GIButton.ButtonColour.Blue" Width="100px;" OnClickEvent="SubmitMessage"></GIButton>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="d-none d-lg-block divider-15"></div>
+                </div>
+            </div>
+        </GIGridColumn>
+        <GIGridColumn Width="3"></GIGridColumn>
+    </GIGridRow>
+</GIGridLayout>
+@code {
+
+    GIInput Address, Fullname, Phonenumber, Email;
+    GITextarea Message;
+    public bool DataProtectionCheck { get; set; }
+
+    public void SubmitMessage()
+    {
+        Console.WriteLine("Address: " + Address.GetValue() + " - Fullname: " + Fullname.GetValue() + " - Phonenumber: " + Phonenumber.GetValue() + " - Email: " + Email.GetValue());
+        Console.WriteLine(Message.GetValue());
+    }
+}

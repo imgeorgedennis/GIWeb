@@ -1,4 +1,4 @@
-﻿<div class="container border-danger" style="@GetDebug()">
+﻿<div class="container border-danger @CustomClass" style="@GetDebug()">
     @ChildContent
 </div>
 
@@ -6,6 +6,9 @@
 
     [Parameter]
     public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public String CustomClass { get; set; }
 
     [Parameter]
     public string Width { get; set; } = "";

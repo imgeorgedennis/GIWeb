@@ -1,369 +1,102 @@
-﻿<div class="container">
-    <!-- wrappers for visual page editor and boxed version of template -->
-    <div id="canvas">
-        <div id="box_wrapper">
-            <!-- template sections -->
-            <!--topline section visible only on small screens|-->
-            <section class="page_topline ls s-borderbottom c-my-10 c-my-lg-20">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 text-md-left text-center">
-                            <ul class="top-includes">
-                                <li>
-                                    <span class="icon-inline">
-                                        <span class="icon-styled color-main fs-14">
-                                            <i class="fa fa-phone"></i>
-                                        </span>
-                                        <span class="small-text">
-                                            <a href="#">800 - 123-45-67</a>
-                                        </span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <span class="icon-inline">
-                                        <span class="icon-styled color-main fs-14">
-                                            <i class="fa fa-pencil"></i>
-                                        </span>
-                                        <span class="small-text">
-                                            <a href="#">Support@GosportInternet.co.uk</a>
-                                        </span>
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 text-center text-md-right d-none d-md-block">
-                            <ul class="top-includes">
-                                <li>
-                                    <span class="icon-inline">
-                                        <span class="icon-styled color-main2 fs-14">
-                                            <i class="fa fa-comment"></i>
-                                        </span>
-                                        <span class="small-text">
-                                            <a class="hover-main2" href="/contact.html">Contact us</a>
-                                        </span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <span class="icon-inline">
-                                        <span class="icon-styled color-main2 fs-14">
-                                            <i class="fa fa-user"></i>
-                                        </span>
-                                        <span class="small-text">
-                                            <a class="hover-main2" href="/login"> Login in</a>
-                                        </span>
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+﻿
+<div id="canvas">
+    <div id="box_wrapper">
+        <!-- template sections -->
+        <!--topline section visible only on small screens|-->
+        <section class="page_topline ls s-borderbottom c-my-10 c-my-lg-20">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-md-left text-center">
+                    <ul class="top-includes">
+                        <li>
+                            <span class="icon-inline">
+                                <span class="icon-styled color-main fs-14 ml-4">
+                                    <i class="fa fa-phone"></i>
+                                </span>
+                                <span class="small-text">
+                                    <a href="#">800 - 123-45-67</a>
+                                </span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="icon-inline">
+                                <span class="icon-styled color-main fs-14">
+                                    <i class="fa fa-pencil"></i>
+                                </span>
+                                <span class="small-text">
+                                    <a href="#">Support@GosportInternet.com</a>
+                                </span>
+                            </span>
+                        </li>
+                    </ul>
                 </div>
-            </section>
-            <!--eof topline-->
-
-            <div class="header_absolute header_layout_1">
-                <div id="particles-js"></div>
-                <!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->
-                <header class="page_header ls justify-nav-end">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-xl-2 col-lg-4 col-md-5 col-11">
-                                <a class="logo">
-                                    <span class="logo-text py-20"><strong>Gosport</strong>Internet</span>
-                                </a>
-                            </div>
-                            <div class="col-xl-9 col-lg-8 col-md-7 col-1">
-                                <div class="nav-wrap">
-
-                                    <!-- main nav start -->
-                                    <nav class="top-nav">
-                                        <ul class="nav sf-menu">
+                <div class="col-md-6 text-center text-md-right d-none d-md-block">
+                    <ul class="top-includes">
+                        <li>
+                            <span class="icon-inline">
+                                <span class="icon-styled color-main2 fs-14">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                                <span class="small-text">
+                                    <a class="hover-main2" href="/login"> Login in</a>
+                                </span>
+                            </span>
+                        </li>
+                        @*<li>
+                            <span class="icon-inline">
+                                <span class="icon-styled color-main2 fs-14">
+                                    <i class="fa fa-address-book"></i>
+                                </span>
+                                <span class="small-text">
+                                    <a class="hover-main2" href="/componenttest">Component Test Page</a>
+                                </span>
+                            </span>
+                        </li>*@
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="header_absolute header_layout_1">
+            <div id="particles-js"></div>
+            <header class="page_header ls justify-nav-end">
+                <div class="row align-items-center">
+                    <div class="col-xl-2 col-lg-4 col-md-5 col-11">
+                        <a class="logo ml-5 mt-2">
+                            <span class="logo-text py-20"><strong>Gosport</strong>Internet</span>
+                        </a>
+                    </div>
+                    @* START *@
+                    <div class="col-xl-9 col-lg-8 col-md-7 col-1">
+                        <div class="nav-wrap">
+                            <nav class="top-nav">
+                                <ul class="nav sf-menu">
+                                    <li>
+                                        <a href="about.html">Test Links</a>
+                                        <ul>
                                             <li>
-                                                <a href="about.html">Pages</a>
-                                                <ul>
-                                                    <li>
-                                                        <a href="about.html">About</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="team.html">Team</a>
-                                                        <ul>
-                                                            <li>
-                                                                <a href="team.html">Team List</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="team-single.html">Team Member</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <a href="services.html">Our Services</a>
-                                                        <ul>
-                                                            <li>
-                                                                <a href="services.html">Services 1</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="services2.html">Services 2</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="services3.html">Services 3</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="service-single.html">Single Service</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <a href="availability-map.html">Availability Map</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="booking-form.html">Booking Form</a>
-                                                    </li>
-                                                    <!-- gallery -->
-                                                    <li>
-                                                        <a href="gallery-image.html">Gallery</a>
-                                                        <ul>
-                                                            <!-- Gallery image only -->
-                                                            <li>
-                                                                <a href="gallery-image.html">Gallery Regular</a>
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="gallery-image-2-cols.html">2 columns</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="gallery-image.html">3 columns</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="gallery-image-4-cols-fullwidth.html">4 columns fullwidth</a>
-                                                                    </li>
-
-                                                                </ul>
-                                                            </li>
-                                                            <!-- eof Gallery image only -->
-                                                            <!-- Gallery with title -->
-                                                            <li>
-                                                                <a href="gallery-title.html">Gallery Title</a>
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="gallery-title-2-cols.html">2 columns</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="gallery-title.html">3 column</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="gallery-title-4-cols-fullwidth.html">4 columns fullwidth</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                            <!-- eof Gallery with title -->
-                                                            <!-- Gallery with excerpt -->
-                                                            <li>
-                                                                <a href="gallery-excerpt.html">Gallery Excerpt</a>
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="gallery-excerpt-2-cols.html">2 columns</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="gallery-excerpt.html">3 column</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="gallery-excerpt-4-cols-fullwidth.html">4 columns fullwdith</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                            <!-- eof Gallery with excerpt -->
-
-                                                            <li>
-                                                                <a href="gallery-tiled.html">Tiled Gallery</a>
-                                                            </li>
-
-                                                            <!-- Gallery item -->
-                                                            <li>
-                                                                <a href="gallery-single.html">Gallery Single</a>
-                                                            </li>
-                                                            <!-- eof Gallery item -->
-                                                        </ul>
-                                                    </li>
-                                                    <!-- eof Gallery -->
-
-                                                    <li>
-                                                        <a href="pricing.html">Pricing</a>
-                                                    </li>
-
-
-                                                    <!-- events -->
-                                                    <li>
-                                                        <a href="events-left.html">Events</a>
-                                                        <ul>
-                                                            <li>
-                                                                <a href="events-left.html">Left Sidebar</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="events-right.html">Right Sidebar</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="events-full.html">Full Width</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="event-single-left.html">Single Event</a>
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="event-single-left.html">Left Sidebar</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="event-single-right.html">Right Sidebar</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="event-single-full.html">Full Width</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <!-- eof events -->
-                                                    <li>
-                                                        <a href="faq.html">FAQ</a>
-                                                        <ul>
-                                                            <li>
-                                                                <a href="faq.html">FAQ</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="faq2.html">FAQ 2</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <!-- shop -->
-                                                    <li>
-                                                        <a href="shop-full.html">Shop</a>
-                                                        <ul>
-                                                            <li>
-                                                                <a href="shop-account-dashboard.html">Account</a>
-                                                                <ul>
-
-                                                                    <li>
-                                                                        <a href="shop-account-details.html">Account details</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="shop-account-addresses.html">Addresses</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="shop-account-address-edit.html">Edit Address</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="shop-account-orders.html">Orders</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="shop-account-order-single.html">Single Order</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="shop-account-downloads.html">Downloads</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="shop-account-password-reset.html">Password Reset</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="shop-account-login.html">Login/Logout</a>
-                                                                    </li>
-
-                                                                </ul>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shop-full.html">Shop Full Width</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shop-left.html">Shop Left Sidebar</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shop-right.html">Shop Right Sidebar</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shop-product-right.html">Product Right Sidebar</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shop-product-left.html">Product Left Sidebar</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shop-cart.html">Cart</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shop-checkout.html">Checkout</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shop-order-received.html">Order Received</a>
-                                                            </li>
-
-                                                        </ul>
-                                                    </li>
-                                                    <!-- eof shop -->
-
-                                                    <li>
-                                                        <a href="terms_of_use.html">Terms Of Use</a>
-                                                    </li>
-                                                    <!-- features -->
-                                                    <li>
-                                                        <a href="shortcodes_iconbox.html">Shortcodes</a>
-                                                        <ul>
-                                                            <li>
-                                                                <a href="shortcodes_typography.html">Typography</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shortcodes_buttons.html">Buttons</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shortcodes_pricing.html">Pricing</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shortcodes_iconbox.html">Icon Boxes</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shortcodes_progress.html">Progress</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shortcodes_tabs.html">Tabs &amp; Collapse</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shortcodes_bootstrap.html">Bootstrap Elements</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shortcodes_animation.html">Animation</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shortcodes_icons.html">Template Icons</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shortcodes_socialicons.html">Social Icons</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <!-- eof shortcodes -->
-
-                                                    <li>
-                                                        <a href="shortcodes_widgets_default.html">Widgets</a>
-                                                        <ul>
-                                                            <li>
-                                                                <a href="shortcodes_widgets_default.html">Default Widgets</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shortcodes_widgets_shop.html">Shop Widgets</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shortcodes_widgets_custom.html">Custom Widgets</a>
-                                                            </li>
-                                                        </ul>
-
-                                                    </li>
-                                                </ul>
+                                                <a href="/aboutus">About Us</a>
                                             </li>
-                                            <!-- eof pages -->
+                                            <li>
+                                                <a href="/faq">FAQ</a>
+                                            </li>
+                                            <li>
+                                                <a href="/contactus">Contact Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="/tos">Terms Of Service</a>
+                                            </li>
+                                            <li>
+                                                <a href="/componenttest">Component Test Page</a>
+                                            </li>
                                         </ul>
-                                    </nav>
-                                    <!-- eof main nav -->
-                                </div>
-                            </div>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
-                </header>
-            </div>
-        </div><!-- eof #box_wrapper -->
-    </div><!-- eof #canvas -->
+                    @* END *@
+                </div>
+            </header>
+        </div>
+    </div>
 </div>
 <div style="height:125px;"></div>
-

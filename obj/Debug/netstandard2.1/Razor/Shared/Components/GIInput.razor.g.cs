@@ -87,9 +87,8 @@ using GIWeb.Shared;
 #line default
 #line hidden
 #nullable disable
-            __builder.AddContent(0, "        ");
-            __builder.OpenElement(1, "label");
-            __builder.AddAttribute(2, "class", 
+            __builder.OpenElement(0, "label");
+            __builder.AddAttribute(1, "class", 
 #nullable restore
 #line 5 "C:\Users\George\Documents\GIWeb\Shared\Components\GIInput.razor"
                        LabelClass
@@ -98,7 +97,7 @@ using GIWeb.Shared;
 #line hidden
 #nullable disable
             );
-            __builder.AddContent(3, 
+            __builder.AddContent(2, 
 #nullable restore
 #line 5 "C:\Users\George\Documents\GIWeb\Shared\Components\GIInput.razor"
                                     LabelText
@@ -108,7 +107,6 @@ using GIWeb.Shared;
 #nullable disable
             );
             __builder.CloseElement();
-            __builder.AddMarkupContent(4, "\r\n");
 #nullable restore
 #line 6 "C:\Users\George\Documents\GIWeb\Shared\Components\GIInput.razor"
     }
@@ -116,9 +114,8 @@ using GIWeb.Shared;
 #line default
 #line hidden
 #nullable disable
-            __builder.AddContent(5, "    ");
-            __builder.OpenElement(6, "input");
-            __builder.AddAttribute(7, "id", 
+            __builder.OpenElement(3, "input");
+            __builder.AddAttribute(4, "id", 
 #nullable restore
 #line 7 "C:\Users\George\Documents\GIWeb\Shared\Components\GIInput.razor"
                 Id
@@ -127,7 +124,7 @@ using GIWeb.Shared;
 #line hidden
 #nullable disable
             );
-            __builder.AddAttribute(8, "class", "form-control" + " text-center" + " woocommerce-Input" + " woocommerce-Input--text" + " input-text" + " mt-" + (
+            __builder.AddAttribute(5, "class", "form-control" + " text-center" + " woocommerce-Input" + " woocommerce-Input--text" + " input-text" + " mt-" + (
 #nullable restore
 #line 7 "C:\Users\George\Documents\GIWeb\Shared\Components\GIInput.razor"
                                                                                                              TopMargin
@@ -152,7 +149,7 @@ using GIWeb.Shared;
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(9, "style", "width:" + (
+            __builder.AddAttribute(6, "style", "width:" + (
 #nullable restore
 #line 7 "C:\Users\George\Documents\GIWeb\Shared\Components\GIInput.razor"
                                                                                                                                                                      Width
@@ -161,7 +158,7 @@ using GIWeb.Shared;
 #line hidden
 #nullable disable
             ) + ";");
-            __builder.AddAttribute(10, "value", 
+            __builder.AddAttribute(7, "value", 
 #nullable restore
 #line 7 "C:\Users\George\Documents\GIWeb\Shared\Components\GIInput.razor"
                                                                                                                                                                                      Value
@@ -170,7 +167,7 @@ using GIWeb.Shared;
 #line hidden
 #nullable disable
             );
-            __builder.AddAttribute(11, "placeholder", 
+            __builder.AddAttribute(8, "placeholder", 
 #nullable restore
 #line 7 "C:\Users\George\Documents\GIWeb\Shared\Components\GIInput.razor"
                                                                                                                                                                                                           Placeholder
@@ -179,7 +176,7 @@ using GIWeb.Shared;
 #line hidden
 #nullable disable
             );
-            __builder.AddAttribute(12, "oninput", Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.ChangeEventArgs>(this, 
+            __builder.AddAttribute(9, "oninput", Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.ChangeEventArgs>(this, 
 #nullable restore
 #line 7 "C:\Users\George\Documents\GIWeb\Shared\Components\GIInput.razor"
                                                                                                                                                                                                                                  OnValueChanged
@@ -188,9 +185,8 @@ using GIWeb.Shared;
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(13, "readonly", true);
+            __builder.AddAttribute(10, "readonly", true);
             __builder.CloseElement();
-            __builder.AddMarkupContent(14, "\r\n");
 #nullable restore
 #line 8 "C:\Users\George\Documents\GIWeb\Shared\Components\GIInput.razor"
 }
@@ -202,9 +198,8 @@ else
 #line default
 #line hidden
 #nullable disable
-            __builder.AddContent(15, "        ");
-            __builder.OpenElement(16, "label");
-            __builder.AddAttribute(17, "class", 
+            __builder.OpenElement(11, "label");
+            __builder.AddAttribute(12, "class", 
 #nullable restore
 #line 13 "C:\Users\George\Documents\GIWeb\Shared\Components\GIInput.razor"
                        LabelClass
@@ -213,7 +208,7 @@ else
 #line hidden
 #nullable disable
             );
-            __builder.AddContent(18, 
+            __builder.AddContent(13, 
 #nullable restore
 #line 13 "C:\Users\George\Documents\GIWeb\Shared\Components\GIInput.razor"
                                     LabelText
@@ -223,7 +218,6 @@ else
 #nullable disable
             );
             __builder.CloseElement();
-            __builder.AddMarkupContent(19, "\r\n");
 #nullable restore
 #line 14 "C:\Users\George\Documents\GIWeb\Shared\Components\GIInput.razor"
     }
@@ -231,9 +225,8 @@ else
 #line default
 #line hidden
 #nullable disable
-            __builder.AddContent(20, "    ");
-            __builder.OpenElement(21, "input");
-            __builder.AddAttribute(22, "id", 
+            __builder.OpenElement(14, "input");
+            __builder.AddAttribute(15, "id", 
 #nullable restore
 #line 15 "C:\Users\George\Documents\GIWeb\Shared\Components\GIInput.razor"
                 Id
@@ -242,7 +235,7 @@ else
 #line hidden
 #nullable disable
             );
-            __builder.AddAttribute(23, "class", "form-control" + " text-center" + " woocommerce-Input" + " woocommerce-Input--text" + " input-text" + " mt-" + (
+            __builder.AddAttribute(16, "class", "form-control" + " text-center" + " woocommerce-Input" + " woocommerce-Input--text" + " input-text" + " mt-" + (
 #nullable restore
 #line 15 "C:\Users\George\Documents\GIWeb\Shared\Components\GIInput.razor"
                                                                                                              TopMargin
@@ -267,7 +260,7 @@ else
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(24, "style", "width:" + (
+            __builder.AddAttribute(17, "style", "width:" + (
 #nullable restore
 #line 15 "C:\Users\George\Documents\GIWeb\Shared\Components\GIInput.razor"
                                                                                                                                                                      Width
@@ -276,7 +269,7 @@ else
 #line hidden
 #nullable disable
             ) + ";");
-            __builder.AddAttribute(25, "value", 
+            __builder.AddAttribute(18, "value", 
 #nullable restore
 #line 15 "C:\Users\George\Documents\GIWeb\Shared\Components\GIInput.razor"
                                                                                                                                                                                      Value
@@ -285,7 +278,7 @@ else
 #line hidden
 #nullable disable
             );
-            __builder.AddAttribute(26, "placeholder", 
+            __builder.AddAttribute(19, "placeholder", 
 #nullable restore
 #line 15 "C:\Users\George\Documents\GIWeb\Shared\Components\GIInput.razor"
                                                                                                                                                                                                           Placeholder
@@ -294,7 +287,7 @@ else
 #line hidden
 #nullable disable
             );
-            __builder.AddAttribute(27, "oninput", Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.ChangeEventArgs>(this, 
+            __builder.AddAttribute(20, "oninput", Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.ChangeEventArgs>(this, 
 #nullable restore
 #line 15 "C:\Users\George\Documents\GIWeb\Shared\Components\GIInput.razor"
                                                                                                                                                                                                                                  OnValueChanged
@@ -304,7 +297,6 @@ else
 #nullable disable
             ));
             __builder.CloseElement();
-            __builder.AddMarkupContent(28, "\r\n");
 #nullable restore
 #line 16 "C:\Users\George\Documents\GIWeb\Shared\Components\GIInput.razor"
 }

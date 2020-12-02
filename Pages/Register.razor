@@ -1,51 +1,10 @@
 ﻿@page "/register"
 @using GIWeb.Shared.Components
 
-<GIGridLayout>
-    <GIGridRow>
-        <GIGridColumn Width="3">
-        </GIGridColumn>
-        <GIGridColumn CustomClass="text-center" Width="6">
-            <GIInput @ref="Firstname" Placeholder="First Name."></GIInput>
-            <GIInput @ref="Surname" Placeholder="Surname."></GIInput>
-            <GIInput @ref="Email" Placeholder="Email address."></GIInput>
-            <GIInput @ref="ComfirmEmail" Placeholder="Re-enter email."></GIInput>
-            <GIInput @ref="Password" Placeholder="Password."></GIInput>
-            <GIInput @ref="ComfirmPassword" Placeholder="Re-enter password."></GIInput>
-
-            <small class="">By clicking "Sign Up" below, you agree to the <a href="/terms_of_use.html">Terms of Service</a> and <a href="/terms_of_use.html">Privacy Policy</a>.</small>
-            <GIButton ButtonText="Create Acount" CustomClass="mt-2" Width="150px;"></GIButton>
-            <div>
-                <a href="/login" style="width:150px;" class="woocommerce-Button btn btn-maincolor3 mt-2" role="button"><span>Back</span></a>
-            </div>
-        </GIGridColumn>
-        <GIGridColumn Width="3"></GIGridColumn>
-    </GIGridRow>
-</GIGridLayout>
+<GIRegister></GIRegister>
 <div style="height:100px;"></div>
 
-@code {
+@code
+{
 
-    GIInput Firstname, Surname, Email, ComfirmEmail, Password, ComfirmPassword;
-    GiCheckbox TermsOfService;
-
-    public void AttemptRegister()
-    {
-        Console.WriteLine("Attempting to signin with credienials: Email= " + Email.GetValue() + " - Password= " + Password.GetValue());
-    }
-
-    public void ButtonClick()
-    {
-        Console.WriteLine("DONG!!");
-    }
-
-    public void PrintOnChange(string text)
-    {
-        Console.WriteLine(text.ToString());
-    }
-
-    //protected override async Task OnInitializedAsync()
-    //{
-
-    //}
 }
