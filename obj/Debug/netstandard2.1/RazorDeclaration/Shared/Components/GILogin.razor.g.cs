@@ -83,7 +83,7 @@ using GIWeb.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "C:\Users\George\Documents\GIWeb\Shared\Components\GILogin.razor"
+#line 15 "C:\Users\George\Documents\GIWeb\Shared\Components\GILogin.razor"
        
 
     GIInput Email, Password;

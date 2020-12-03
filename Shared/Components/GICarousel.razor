@@ -1,0 +1,26 @@
+﻿
+
+<div id="@Id" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        @foreach (var slide in Slides)
+        {
+            <div class="carousel-item">
+                <img class="d-block w-100" src="@slide.Image_Source">
+            </div>
+        }
+    </div>
+</div>
+
+@code
+{
+    [Parameter]
+    public List<Slide> Slides { get; set; }
+
+    [Parameter]
+    public string Id { get; set; }
+
+    public class Slide
+    {
+        public string Image_Source { get; set; }
+    }
+}

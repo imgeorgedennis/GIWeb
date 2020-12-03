@@ -83,19 +83,19 @@ using GIWeb.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 17 "C:\Users\George\Documents\GIWeb\Shared\Components\GiCheckbox.razor"
-  
-
+#line 8 "C:\Users\George\Documents\GIWeb\Shared\Components\GiCheckbox.razor"
+ 
+    [Parameter]
     public string Text { get; set; }
-    public string Id { get; set; }
-    public bool IsChecked { get; set; } = false;
+
+    private bool IsChecked { get; set; } = false;
 
     public bool GetValue()
     {
         return IsChecked;
     }
 
-    private void Toggle()
+    public void Toggle()
     {
         if (IsChecked == true)
         {

@@ -90,7 +90,10 @@ using GIWeb.Shared;
     public RenderFragment ChildContent { get; set; }
 
     [Parameter]
-    public String CustomClass { get; set; }
+    public string CustomClass { get; set; }
+
+    [Parameter]
+    public string CustomStyle { get; set; }
 
     [Parameter]
     public string Width { get; set; } = "";

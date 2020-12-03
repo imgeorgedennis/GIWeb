@@ -90,6 +90,27 @@ using GIWeb.Shared.Components;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 18 "C:\Users\George\Documents\GIWeb\Pages\ComponentTest.razor"
+       
+
+    GIInput TestInput;
+    GiCheckbox IsChecked;
+
+    public void PrintInputfield()
+    {
+        Console.WriteLine(TestInput.GetValue());
+    }
+
+    public void VerifyCheckbox()
+    {
+        Console.WriteLine("Checkbox Value: " + IsChecked.GetValue().ToString());
+    }
+
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

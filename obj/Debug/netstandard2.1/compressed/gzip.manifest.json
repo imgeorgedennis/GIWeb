@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\DCf-wm3tV22uailOmCBg_X7GWvqVjBQxZEDng0hd2os=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\hEN46eJz2jAnNYys2AIUf7l690AZDi5dtRwrLM8je2I=.hash",
       "Source": "C:\\Users\\George\\Documents\\GIWeb\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\GIWeb.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/GIWeb.dll.gz"
     },
@@ -391,7 +391,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\v5W6gt-teIYh9SENWyytVgZY85dVSvvE4KVo5OTZtQI=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\3-BDJJr-srTY1Zt5_GsoEb3Kol3UwN3GVPP4LXhdLAM=.hash",
       "Source": "C:\\Users\\George\\Documents\\GIWeb\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\GIWeb.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/GIWeb.pdb.gz"
     },
@@ -416,7 +416,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\M7FPO8UkmB8jaDTe919QouvMB3SHRv5RoXeo9A_12kg=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\-7imw8lQd_-c8a6GITTn6gb1R1OD6JMPGm6O88XnfAc=.hash",
       "Source": "C:\\Users\\George\\Documents\\GIWeb\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
     }

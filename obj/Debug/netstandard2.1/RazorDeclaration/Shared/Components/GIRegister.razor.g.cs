@@ -83,7 +83,7 @@ using GIWeb.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 23 "C:\Users\George\Documents\GIWeb\Shared\Components\GIRegister.razor"
+#line 22 "C:\Users\George\Documents\GIWeb\Shared\Components\GIRegister.razor"
        
 
     GIInput Firstname, Surname, Email, ComfirmEmail, Password, ComfirmPassword;
@@ -110,7 +110,6 @@ using GIWeb.Shared;
                 request.Password = Password.GetValue();
 
                 // Send request to API
-
             }
         }
     }

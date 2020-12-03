@@ -1,31 +1,21 @@
 ﻿@page "/login"
 @using GIWeb.Shared.Components
 
-@*<div class="container">
-    <GIButton Colour="@GIButton.ButtonColour.Green" OnClickEvent="ShowModal" ButtonText="Show Login Modal" Width="150px;"></GIButton>
-</div>*@
+<GIGridLayout CustomClass="mb-60">
+    <GIGridRow>
+        <GIGridColumn Width="2"></GIGridColumn>
+        <GIGridColumn Width="8">
+            <GILogin></GILogin>
+        </GIGridColumn>
+        <GIGridColumn Width="2"></GIGridColumn>
+    </GIGridRow>
+</GIGridLayout>
 
-<GILogin></GILogin>
-
-@*<GIModal @ref="m1" Title="Sign in to your account." PreferredWidth="1000px;">
-    <ModalContent>
-        <GILogin></GILogin>
-    </ModalContent>
-</GIModal>*@
-
-<div style="height:219px;"></div>
 
 @code {
 
-    GIModal m1;
-
-    public void ShowModal()
+    protected override async Task OnInitializedAsync()
     {
-        m1.ShowModal();
+
     }
-
-    //protected override async Task OnInitializedAsync()
-    //{
-
-    //}
 }

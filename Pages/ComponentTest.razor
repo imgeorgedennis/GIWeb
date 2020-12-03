@@ -1,18 +1,33 @@
 ﻿@page "/componenttest"
 @using GIWeb.Shared.Components
 
-
 <div class="container">
 
     <GIInput Width="200px;" ShowLabel="true" LabelText="Test label:" TopMargin="0"></GIInput>
 
-    <GIButton ButtonText="Test Button" Width="150px;"></GIButton>
+    <GIButton ButtonText="Test Button" Width="150px;" OnClickEvent="PrintInputfield"></GIButton>
 
     <GILogin></GILogin>
 
     <GIRegister></GIRegister>
 
+    <GiCheckbox @ref="IsChecked" Text="Checkbox One"></GiCheckbox>
+    <GIButton OnClickEvent="VerifyCheckbox" ButtonText="Check"></GIButton>
+
 </div>
 @code {
+
+    GIInput TestInput;
+    GiCheckbox IsChecked;
+
+    public void PrintInputfield()
+    {
+        Console.WriteLine(TestInput.GetValue());
+    }
+
+    public void VerifyCheckbox()
+    {
+        Console.WriteLine("Checkbox Value: " + IsChecked.GetValue().ToString());
+    }
 
 }

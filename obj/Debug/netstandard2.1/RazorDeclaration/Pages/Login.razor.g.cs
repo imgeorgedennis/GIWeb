@@ -91,20 +91,13 @@ using GIWeb.Shared.Components;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 18 "C:\Users\George\Documents\GIWeb\Pages\Login.razor"
+#line 15 "C:\Users\George\Documents\GIWeb\Pages\Login.razor"
        
 
-    GIModal m1;
-
-    public void ShowModal()
+    protected override async Task OnInitializedAsync()
     {
-        m1.ShowModal();
+
     }
-
-    //protected override async Task OnInitializedAsync()
-    //{
-
-    //}
 
 #line default
 #line hidden
