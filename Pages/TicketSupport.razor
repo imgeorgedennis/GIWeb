@@ -1,0 +1,123 @@
+﻿@page "/support/ticket"
+@using GIWeb.Shared.Components
+
+<div class="container mb-60">
+    <GIButton ButtonText="Create Ticket" Colour="GIButton.ButtonColour.Purple" CustomClass="float-left mb-4" Width="130px;" OnClickEvent="ShowCreateTicketModal"></GIButton>
+    <table class="woocommerce-orders-table woocommerce-MyAccount-orders shop_table shop_table_responsive my_account_orders account-orders-table">
+        <thead>
+            <tr>
+                <th class="woocommerce-orders-table__header woocommerce-orders-table__header-order-number"><span class="nobr">ID</span></th>
+                <th class="woocommerce-orders-table__header woocommerce-orders-table__header-order-date"><span class="nobr">Created</span></th>
+                <th class="woocommerce-orders-table__header woocommerce-orders-table__header-order-status"><span class="nobr">Status</span></th>
+                <th class="woocommerce-orders-table__header woocommerce-orders-table__header-order-total"><span class="nobr">Subject</span></th>
+                <th class="woocommerce-orders-table__header woocommerce-orders-table__header-order-actions text-center"><span class="nobr float-left">Actions</span></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="woocommerce-orders-table__row woocommerce-orders-table__row--status-processing order">
+                <td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-number" data-title="Order">
+                    <a href="shop-account-order-single.html">#1719</a>
+                </td>
+                <td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-date" data-title="Date">
+                    <time datetime="2018-03-06T08:55:39+00:00">March 6, 2018</time>
+                </td>
+                <td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-status" data-title="Status">
+                    Processing
+                </td>
+                <td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-total" data-title="Total">
+                    <span>Password Reset</span>
+                </td>
+                <td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-actions with-btn" data-title="Actions">
+                    <a href="shop-account-order-single.html" class="woocommerce-button btn btn-maincolor small-btn view"><span>View</span></a>
+                </td>
+            </tr>
+
+            <tr class="woocommerce-orders-table__row woocommerce-orders-table__row--status-on-hold order">
+                <td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-number" data-title="Order">
+                    <a href="shop-account-order-single.html">#106</a>
+
+                </td>
+                <td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-date" data-title="Date">
+                    <time datetime="2018-03-22T13:34:43+00:00">March 22, 2018</time>
+
+                </td>
+                <td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-status" data-title="Status">
+                    On hold
+                </td>
+                <td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-total" data-title="Total">
+                    <span>Product Return</span>
+                </td>
+                <td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-actions with-btn" data-title="Actions">
+                    <a href="shop-account-order-single.html" class="woocommerce-button btn btn-maincolor small-btn view float-none"><span>View</span></a>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<GIModal @ref="ViewTicketModal" ShowFooter="true" PreferredWidth="1200px;" Title="View Ticket Modal">
+    <ModalBody>
+
+    </ModalBody>
+    <ModalFooter>
+
+    </ModalFooter>
+</GIModal>
+
+<GIModal @ref="CreateRicketModal" Title="Create a ticket" ShowFooter="true" PreferredWidth="1200px;">
+    <ModalBody>
+        <GIGridLayout>
+            <GIGridRow>
+                <GIGridColumn Width="3">
+                    <GIInput @ref="CreateTicket_Subject" ShowLabel="true" LabelText="Subject:" LabelClass="ml-2" TopMargin="0"></GIInput>
+                </GIGridColumn>
+                <GIGridColumn Width="4">
+                    <GIDropdown Id="priorities" @ref="Priority_Dropdown" ItemList="Priorities" Width="200px" ShowLabel="true" LabelText="Priority:" TopMargin="0"></GIDropdown>
+                </GIGridColumn>
+            </GIGridRow>
+        </GIGridLayout>
+        <label class="ml-2">Message: </label>
+        <GITextarea IsResizeable="false" Placeholder=" "></GITextarea>
+    </ModalBody>
+    <ModalFooter>
+        <GIButton ButtonText="Create" Margin="1"></GIButton>
+        <GIButton ButtonText="Close" Colour="GIButton.ButtonColour.Blue" Margin="1"></GIButton>
+    </ModalFooter>
+</GIModal>
+
+@code {
+
+    private List<GIDropdown.SelectItem> Priorities = new List<GIDropdown.SelectItem>();
+
+
+    GIInput CreateTicket_Subject;
+    GIDropdown Priority_Dropdown;
+    GITextarea CreateTicket_Message;
+    GIModal CreateRicketModal, ViewTicketModal;
+
+    public void ShowViewTicketModal()
+    {
+        ViewTicketModal.ShowModal();
+    }
+
+    public void ShowCreateTicketModal()
+    {
+        CreateRicketModal.ShowModal();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        GetPriorities();
+    }
+
+    private void GetPriorities()
+    {
+        Priorities.Add(new GIDropdown.SelectItem() { Name = "Urgent", Value = "urgent" });
+        Priorities.Add(new GIDropdown.SelectItem() { Name = "Important", Value = "important" });
+        Priorities.Add(new GIDropdown.SelectItem() { Name = "High", Value = "high" });
+        Priorities.Add(new GIDropdown.SelectItem() { Name = "Normal", Value = "normal" });
+        Priorities.Add(new GIDropdown.SelectItem() { Name = "Low", Value = "low" });
+    }
+}

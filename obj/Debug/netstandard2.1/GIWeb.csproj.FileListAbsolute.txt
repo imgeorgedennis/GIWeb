@@ -548,6 +548,12 @@ C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\RazorDeclaration\Pages\
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Internet.razor.g.cs
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\Razor\Pages\Hardware.razor.g.cs
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\Razor\Pages\Internet.razor.g.cs
-C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\hEN46eJz2jAnNYys2AIUf7l690AZDi5dtRwrLM8je2I=.hash
-C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\3-BDJJr-srTY1Zt5_GsoEb3Kol3UwN3GVPP4LXhdLAM=.hash
-C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\-7imw8lQd_-c8a6GITTn6gb1R1OD6JMPGm6O88XnfAc=.hash
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\RazorDeclaration\Pages\TicketSupport.razor.g.cs
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\Razor\Pages\TicketSupport.razor.g.cs
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Support.razor.g.cs
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\Razor\Pages\Support.razor.g.cs
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\RazorDeclaration\Shared\Components\GIDropdown.razor.g.cs
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\Razor\Shared\Components\GIDropdown.razor.g.cs
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\37fTF22Ns4D8Fn4VsexJ8FQn89TsFOfnnLWFNg4L_qE=.hash
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\2Kyt4U4-d1fMsgnS85A4U_ScezOsJKAv6nSpXgvn0ZM=.hash
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\wSD3Tj6ux1Ozen7XatzoaZRBIhuX9a10M1OPcvK4IkU=.hash

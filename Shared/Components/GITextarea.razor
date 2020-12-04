@@ -1,8 +1,7 @@
 ﻿
 <div class="form-group has-placeholder">
     <label for="@Id">Message</label>
-    <i class="fa fa-edit color-main"></i>
-    <textarea aria-required="true" rows="@Rows" cols="@Columns" id="@Id" class="form-control @CustomClass" placeholder="@Placeholder" style="resize: @SetIsResizeable();" @bind="Text"></textarea>
+    <textarea aria-required="true" rows="@Rows" cols="@Columns" id="@Id" class="form-control @CustomClass" placeholder="@Placeholder" style="resize: @SetIsResizeable(); @CustomStyle" @bind="Text"></textarea>
 </div>
 
 @code {
@@ -10,6 +9,9 @@
     public string Text { get; set; }
     [Parameter]
     public string Placeholder { get; set; } = "Message";
+
+    [Parameter]
+    public string CustomStyle { get; set; }
 
     [Parameter]
     public string Columns { get; set; } = "50";

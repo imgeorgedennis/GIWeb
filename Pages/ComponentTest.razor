@@ -3,12 +3,7 @@
 
 <div class="container">
 
-    <GIInput Width="200px;" ShowLabel="true" LabelText="Test label:" TopMargin="0"></GIInput>
-
-    <GIButton ButtonText="Test Button" Width="150px;" OnClickEvent="PrintInputfield"></GIButton>
-
     <GILogin></GILogin>
-
     <GIRegister></GIRegister>
 
     <GiCheckbox @ref="IsChecked" Text="Checkbox One"></GiCheckbox>
@@ -22,7 +17,7 @@
 
     public void PrintInputfield()
     {
-        Console.WriteLine(TestInput.GetValue());
+        Console.WriteLine(TestInput.GetValue().ToString());
     }
 
     public void VerifyCheckbox()

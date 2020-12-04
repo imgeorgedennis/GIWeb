@@ -83,12 +83,15 @@ using GIWeb.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 8 "C:\Users\George\Documents\GIWeb\Shared\Components\GITextarea.razor"
+#line 7 "C:\Users\George\Documents\GIWeb\Shared\Components\GITextarea.razor"
        
     [Parameter]
     public string Text { get; set; }
     [Parameter]
     public string Placeholder { get; set; } = "Message";
+
+    [Parameter]
+    public string CustomStyle { get; set; }
 
     [Parameter]
     public string Columns { get; set; } = "50";

@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace GIWeb.Shared.Components
+namespace GIWeb.Pages
 {
     #line hidden
     using System;
@@ -75,7 +75,15 @@ using GIWeb.Shared;
 #line default
 #line hidden
 #nullable disable
-    public partial class GILogin : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 2 "C:\Users\George\Documents\GIWeb\Pages\TicketSupport.razor"
+using GIWeb.Shared.Components;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/support/ticket")]
+    public partial class TicketSupport : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -83,38 +91,25 @@ using GIWeb.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 16 "C:\Users\George\Documents\GIWeb\Shared\Components\GILogin.razor"
+#line 81 "C:\Users\George\Documents\GIWeb\Pages\TicketSupport.razor"
        
 
-    GIInput Email, Password;
+    private List<GIDropdown.SelectItem> Priorities = new List<GIDropdown.SelectItem>();
 
-    public void AttemptSignIn()
+
+    GIInput CreateTicket_Subject;
+    GITextarea CreateTicket_Message;
+    GIModal CreateRicketModal, ViewTicketModal;
+
+    public void ShowViewTicketModal()
     {
-
-        Console.WriteLine("Attempting to signin with credienials: Email= " + Email.GetValue() + " - Password= " + Password.GetValue());
-
-        LoginRequest request = new LoginRequest();
-
-        if (Email.GetValue() != null && Email.GetValue().ToString().Contains("@"))
-        {
-            request.Email = Email.GetValue();
-            request.Password = Password.GetValue();
-
-            // Send login request
-        }
+        ViewTicketModal.ShowModal(); 
     }
 
-    //protected override async Task OnInitializedAsync()
-    //{
-
-    //}
-
-    public class LoginRequest
+    public void ShowCreateTicketModal()
     {
-        public string Email { get; set; }
-        public string Password { get; set; }
+        CreateRicketModal.ShowModal();
     }
-
 
 #line default
 #line hidden

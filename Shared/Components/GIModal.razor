@@ -1,16 +1,18 @@
 ﻿@using System.Threading
+@using System.ComponentModel
+@inherits ComponentBase
 
-<div class="animate__animated modal @transitionClass @backdropClass" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="@modalStyle">
+<div class="modal @transitionClass @backdropClass" tabindex="-1" role="dialog" aria-hidden="true" style="@modalStyle">
     <div class="modal-dialog modal-dialog-centered" role="document" style="max-width:@PreferredWidth;">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">@Title</h5>
+                <h5 class="modal-title">@Title</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="HideModal">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                @ModalContent
+                @ModalBody
             </div>
             @if (ShowFooter)
             {
@@ -25,14 +27,16 @@
 @code{
 
     [Parameter]
-    public RenderFragment ModalContent { get; set; }
+    public RenderFragment ModalBody { get; set; }
+
+    [Parameter]
+    public RenderFragment ModalFooter { get; set; }
+
     [Parameter]
     public bool ShowFooter { get; set; }
 
     [Parameter]
     public bool Transition { get; set; } = false;
-    [Parameter]
-    public RenderFragment ModalFooter { get; set; }
 
     [Parameter]
     public string Title { get; set; } = "";

@@ -1,0 +1,82 @@
+﻿@inherits ComponentBase
+
+
+@if (ShowLabel)
+{
+    <label>@LabelText</label>
+}
+<select class="custom-select mt-@TopMargin mb-3" style="width:@Width;" id="@Id" @onchange="@OnChange" @onclick="OnClickEvent">
+
+    @if (SelectedValue == null)
+    {
+        <option selected value="">Please Select</option>
+    }
+
+    @foreach (var item in ItemList)
+    {
+        if (item.Value == SelectedValue) // Was comparing the value to the name and not the value...
+        {
+            <option value="@item.Value" selected>@item.Name</option>
+        }
+        else
+        {
+            <option value="@item.Value">@item.Name</option>
+        }
+    }
+</select>
+
+@code{
+
+    [Parameter]
+    public EventCallback OnClickEvent { get; set; }
+    [Parameter]
+    public string Width { get; set; } = "100px";
+
+    [Parameter]
+    public string TopMargin { get; set; } = "3";
+
+    [Parameter]
+    public string SelectedValue { get; set; }
+
+    [Parameter]
+    public bool ShowLabel { get; set; } = false;
+
+    [Parameter]
+    public string LabelText { get; set; } = "";
+
+    [Parameter]
+    public string Id { get; set; } = "";
+
+    [Parameter]
+    public List<SelectItem> ItemList { get; set; }
+
+    public void OnChange(ChangeEventArgs e)
+    {
+        SelectedValue = e.Value.ToString();
+    }
+
+    public string GetSelectedValue()
+    {
+        return SelectedValue;
+    }
+
+    private void AddItems(List<SelectItem> items)
+    {
+        foreach (var item in items)
+        {
+            ItemList.Add(item);
+        }
+    }
+
+    public void Clear()
+    {
+        SelectedValue = "";
+    }
+
+    public class SelectItem
+    {
+        public string Name { get; set; }
+        public string Value { get; set; }
+    }
+
+}

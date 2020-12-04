@@ -75,21 +75,7 @@ using GIWeb.Shared;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 1 "C:\Users\George\Documents\GIWeb\Shared\Components\GIModal.razor"
-using System.Threading;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 2 "C:\Users\George\Documents\GIWeb\Shared\Components\GIModal.razor"
-using System.ComponentModel;
-
-#line default
-#line hidden
-#nullable disable
-    public partial class GIModal : ComponentBase
+    public partial class GIDropdown : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -97,81 +83,53 @@ using System.ComponentModel;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 27 "C:\Users\George\Documents\GIWeb\Shared\Components\GIModal.razor"
+#line 26 "C:\Users\George\Documents\GIWeb\Shared\Components\GIDropdown.razor"
       
 
     [Parameter]
-    public RenderFragment ModalBody { get; set; }
+    public EventCallback OnClickEvent { get; set; }
+    [Parameter]
+    public string Width { get; set; } = "100px";
 
     [Parameter]
-    public RenderFragment ModalFooter { get; set; }
+    public string TopMargin { get; set; } = "3";
 
     [Parameter]
-    public bool ShowFooter { get; set; }
+    public string SelectedValue { get; set; }
 
     [Parameter]
-    public bool Transition { get; set; } = false;
+    public bool ShowLabel { get; set; } = false;
 
     [Parameter]
-    public string Title { get; set; } = "";
-    [Parameter]
-    public bool Backdrop { get; set; }
+    public string LabelText { get; set; } = "";
 
     [Parameter]
-    public string PreferredWidth { get; set; } = "1250px";
+    public string Id { get; set; } = "";
 
-    private string backdropClass { get; set; } = "";
-    private string transitionClass { get; set; } = "";
+    [Parameter]
+    public List<SelectItem> ItemList { get; set; }
 
-    private bool showModal { get; set; } = false;
-    private string modalStyle = "display:none;";
-    public void ShowModal()
+    public void OnChange(ChangeEventArgs e)
     {
-        modalStyle = "display: block; padding-right: 15px; width:100%;";
-
-        if (Backdrop)
-        {
-            backdropClass = "modal-backdrop";
-        }
-
-        if (Transition)
-        {
-            transitionClass = "animate__fadeIn";
-        }
-        Console.WriteLine("ShowModal");
-        StateHasChanged();
+        SelectedValue = e.Value.ToString();
     }
 
-    public void HideModal()
+    public string GetSelectedValue()
     {
-        if (Transition)
-        {
-            transitionClass = "animate__fadeOut";
-            closeAfterAnimate();
-        }
-        else
-        {
-            modalStyle = "display:none;";
-        }
-        Console.WriteLine("HideModal");
-        StateHasChanged();
+        return SelectedValue;
     }
 
-    private int fadeTime { get; set; } = 3;
-    private void closeAfterAnimate()
+    public void Clear()
     {
-        CancellationTokenSource source = new CancellationTokenSource();
-
-        var t = Task.Run(async delegate
-        {
-            Console.WriteLine("Starting delay before close");
-            await Task.Delay(400, source.Token);
-            modalStyle = "display:none;";
-            transitionClass = "animate__fadeIn";
-            StateHasChanged();
-            Console.WriteLine("Has closed");
-        });
+        SelectedValue = "";
     }
+
+    public class SelectItem
+    {
+        public string Name { get; set; }
+        public string Value { get; set; }
+    }
+
 
 #line default
 #line hidden
