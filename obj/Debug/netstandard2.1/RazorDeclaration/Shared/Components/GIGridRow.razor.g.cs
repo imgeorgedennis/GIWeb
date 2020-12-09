@@ -91,6 +91,8 @@ using GIWeb.Shared;
 
     [Parameter]
     public string CustomClass { get; set; }
+    [Parameter]
+    public string CustomStyle { get; set; }
 
     [Parameter]
     public bool Debug { get; set; } = false;

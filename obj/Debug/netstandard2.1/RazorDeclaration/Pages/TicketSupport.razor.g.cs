@@ -91,24 +91,51 @@ using GIWeb.Shared.Components;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 81 "C:\Users\George\Documents\GIWeb\Pages\TicketSupport.razor"
+#line 90 "C:\Users\George\Documents\GIWeb\Pages\TicketSupport.razor"
        
 
     private List<GIDropdown.SelectItem> Priorities = new List<GIDropdown.SelectItem>();
 
-
     GIInput CreateTicket_Subject;
+    GIDropdown Priority_Dropdown;
     GITextarea CreateTicket_Message;
-    GIModal CreateRicketModal, ViewTicketModal;
+    GIModal CreateTicketModal, ViewTicketModal;
+
+    public void PrintDropdownValue()
+    {
+        Console.WriteLine(Priority_Dropdown.SelectedValue);
+    }
 
     public void ShowViewTicketModal()
     {
-        ViewTicketModal.ShowModal(); 
+        ViewTicketModal.ShowModal();
     }
 
     public void ShowCreateTicketModal()
     {
-        CreateRicketModal.ShowModal();
+        CreateTicketModal.ShowModal();
+    }
+
+    //protected override async Task OnAfterRenderAsync(bool firstRender)
+    //{
+    //    if (firstRender)
+    //    {
+
+    //    }
+    //}
+
+    protected override async Task OnInitializedAsync()
+    {
+        GetPriorities();
+    }
+
+    private void GetPriorities()
+    {
+        Priorities.Add(new GIDropdown.SelectItem() { Name = "Urgent", Value = "urgent" });
+        Priorities.Add(new GIDropdown.SelectItem() { Name = "Important", Value = "important" });
+        Priorities.Add(new GIDropdown.SelectItem() { Name = "High", Value = "high" });
+        Priorities.Add(new GIDropdown.SelectItem() { Name = "Normal", Value = "normal" });
+        Priorities.Add(new GIDropdown.SelectItem() { Name = "Low", Value = "low" });
     }
 
 #line default

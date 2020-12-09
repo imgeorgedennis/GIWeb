@@ -91,7 +91,7 @@ using GIWeb.Shared.Components;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 79 "C:\Users\George\Documents\GIWeb\Pages\ContactUs.razor"
+#line 83 "C:\Users\George\Documents\GIWeb\Pages\ContactUs.razor"
        
 
     GIInput Address, Fullname, Phonenumber, Email;

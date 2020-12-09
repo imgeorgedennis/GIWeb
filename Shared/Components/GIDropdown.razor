@@ -3,7 +3,7 @@
 
 @if (ShowLabel)
 {
-    <label>@LabelText</label>
+    <label class="@LabelClass">@LabelText</label>
 }
 <select class="custom-select mt-@TopMargin mb-3" style="width:@Width;" id="@Id" @onchange="@OnChange" @onclick="OnClickEvent">
 
@@ -14,7 +14,7 @@
 
     @foreach (var item in ItemList)
     {
-        if (item.Value == SelectedValue) // Was comparing the value to the name and not the value...
+        if (item.Value == SelectedValue)
         {
             <option value="@item.Value" selected>@item.Name</option>
         }
@@ -37,6 +37,9 @@
 
     [Parameter]
     public string SelectedValue { get; set; }
+
+    [Parameter]
+    public string LabelClass { get; set; }
 
     [Parameter]
     public bool ShowLabel { get; set; } = false;

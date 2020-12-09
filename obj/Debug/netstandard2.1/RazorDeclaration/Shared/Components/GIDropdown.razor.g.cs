@@ -75,7 +75,7 @@ using GIWeb.Shared;
 #line default
 #line hidden
 #nullable disable
-    public partial class GIDropdown : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class GIDropdown : ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -83,7 +83,7 @@ using GIWeb.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 26 "C:\Users\George\Documents\GIWeb\Shared\Components\GIDropdown.razor"
+#line 28 "C:\Users\George\Documents\GIWeb\Shared\Components\GIDropdown.razor"
       
 
     [Parameter]
@@ -96,6 +96,9 @@ using GIWeb.Shared;
 
     [Parameter]
     public string SelectedValue { get; set; }
+
+    [Parameter]
+    public string LabelClass { get; set; }
 
     [Parameter]
     public bool ShowLabel { get; set; } = false;
@@ -117,6 +120,14 @@ using GIWeb.Shared;
     public string GetSelectedValue()
     {
         return SelectedValue;
+    }
+
+    private void AddItems(List<SelectItem> items)
+    {
+        foreach (var item in items)
+        {
+            ItemList.Add(item);
+        }
     }
 
     public void Clear()

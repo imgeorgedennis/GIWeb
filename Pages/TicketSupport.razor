@@ -66,15 +66,15 @@
     </ModalFooter>
 </GIModal>
 
-<GIModal @ref="CreateRicketModal" Title="Create a ticket" ShowFooter="true" PreferredWidth="1200px;">
+<GIModal @ref="CreateTicketModal" Title="Create a ticket" ShowFooter="true" PreferredWidth="1200px;">
     <ModalBody>
         <GIGridLayout>
             <GIGridRow>
                 <GIGridColumn Width="3">
-                    <GIInput @ref="CreateTicket_Subject" ShowLabel="true" LabelText="Subject:" LabelClass="ml-2" TopMargin="0"></GIInput>
+                    <GIInput @ref="CreateTicket_Subject" ShowLabel="true" LabelText="Subject:" LabelClass="ml-1" TopMargin="0"></GIInput>
                 </GIGridColumn>
-                <GIGridColumn Width="4">
-                    <GIDropdown Id="priorities" @ref="Priority_Dropdown" ItemList="Priorities" Width="200px" ShowLabel="true" LabelText="Priority:" TopMargin="0"></GIDropdown>
+                <GIGridColumn Width="2">
+                    <GIDropdown Id="priorities" @ref="Priority_Dropdown" ItemList="Priorities" Width="200px" ShowLabel="true" LabelClass="ml-1" LabelText="Priority:" OnClickEvent="PrintDropdownValue" TopMargin="0"></GIDropdown>
                 </GIGridColumn>
             </GIGridRow>
         </GIGridLayout>
@@ -83,7 +83,7 @@
     </ModalBody>
     <ModalFooter>
         <GIButton ButtonText="Create" Margin="1"></GIButton>
-        <GIButton ButtonText="Close" Colour="GIButton.ButtonColour.Blue" Margin="1"></GIButton>
+        <GIButton ButtonText="Close" Colour="GIButton.ButtonColour.Blue" OnClickEvent="CreateTicketModal.HideModal" Margin="1"></GIButton>
     </ModalFooter>
 </GIModal>
 
@@ -91,11 +91,15 @@
 
     private List<GIDropdown.SelectItem> Priorities = new List<GIDropdown.SelectItem>();
 
-
     GIInput CreateTicket_Subject;
     GIDropdown Priority_Dropdown;
     GITextarea CreateTicket_Message;
-    GIModal CreateRicketModal, ViewTicketModal;
+    GIModal CreateTicketModal, ViewTicketModal;
+
+    public void PrintDropdownValue()
+    {
+        Console.WriteLine(Priority_Dropdown.SelectedValue);
+    }
 
     public void ShowViewTicketModal()
     {
@@ -104,8 +108,16 @@
 
     public void ShowCreateTicketModal()
     {
-        CreateRicketModal.ShowModal();
+        CreateTicketModal.ShowModal();
     }
+
+    //protected override async Task OnAfterRenderAsync(bool firstRender)
+    //{
+    //    if (firstRender)
+    //    {
+
+    //    }
+    //}
 
     protected override async Task OnInitializedAsync()
     {

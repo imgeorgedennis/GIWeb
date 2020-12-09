@@ -91,7 +91,7 @@ using GIWeb.Shared.Components;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 13 "C:\Users\George\Documents\GIWeb\Pages\ComponentTest.razor"
+#line 9 "C:\Users\George\Documents\GIWeb\Pages\ComponentTest.razor"
        
 
     GIInput TestInput;

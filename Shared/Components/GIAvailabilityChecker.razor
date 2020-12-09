@@ -1,0 +1,26 @@
+﻿@using GIWeb.Shared.Components
+
+<GIGridLayout Debug="true">
+    <div class="row">
+        <div class="col-xl-6 col-lg-5 col-md-5">
+            <div style="text-align:center;" class="mt-4">
+                <h6 style="align-self:center;">What broadband speed can you get?</h6>
+                <span>Our speed checker will show you what speeds you can expect to get with us before commiting to buy one of our packages.</span>
+            </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-5 col-md-5">
+            <GIInput Width="200px;" CustomClass="float-right" Placeholder="Postcode" @ref="Postcode"></GIInput>
+        </div>
+    </div>
+    <div class="row">
+        <GIGridColumn Width="12">
+            <GIButton CustomClass="float-right" Margin="3"ButtonText="Check now"></GIButton>
+        </GIGridColumn>
+    </div>
+</GIGridLayout>
+
+@code
+{
+    GIInput Postcode;
+}
