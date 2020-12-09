@@ -2,15 +2,20 @@
 <div style="width:100%;">
     <GIInput @ref="Email" Id="i1" Placeholder="Email" Align="GIInput.Alignment.Center" BottomMargin="3"></GIInput>
     <GIInput @ref="Password" Id="i2" Placeholder="Password" Align="GIInput.Alignment.Center"></GIInput>
-    <div>
-        <a href="/resetpassword" target="_blank" class="float-left ml-1 mt-3">Forgot password?</a>
-    </div>
+
+    <GIGridRow>
+        <GIGridColumn Width="6">
+            <ul class="list-group">
+                <a href="/resetpassword" target="_blank" class="float-left ml-1 mt-3">Forgot password?</a>
+                <a href="/register" target="_blank" class="float-left ml-1 mt-3">Don't have an account?</a>
+            </ul>
+        </GIGridColumn>
+        <GIGridColumn Width="6">
+            <GIButton ButtonText="Sign in" OnClickEvent="@AttemptSignIn" Width="150px" Colour="GIButton.ButtonColour.Green" CustomClass="mt-3 rounded float-right"></GIButton>
+        </GIGridColumn>
+    </GIGridRow>
 </div>
 
-<div class="btn-group-vertical float-right">
-    <GIButton ButtonText="Sign in" OnClickEvent="@AttemptSignIn" Width="150px" Colour="GIButton.ButtonColour.Green" CustomClass="rounded float-right"></GIButton>
-    <a href="/register" style="width:150px;" class="woocommerce-Button btn btn-maincolor mt-3 rounded float-right" role="button"><span>Create Account</span></a>
-</div>
 
 
 @code {
@@ -19,7 +24,6 @@
 
     public void AttemptSignIn()
     {
-
         Console.WriteLine("Attempting to signin with credienials: Email= " + Email.GetValue() + " - Password= " + Password.GetValue());
 
         LoginRequest request = new LoginRequest();

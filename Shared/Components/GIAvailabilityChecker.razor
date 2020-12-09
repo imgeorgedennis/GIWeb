@@ -1,26 +1,29 @@
-﻿@using GIWeb.Shared.Components
-
-<GIGridLayout Debug="true">
-    <div class="row">
-        <div class="col-xl-6 col-lg-5 col-md-5">
-            <div style="text-align:center;" class="mt-4">
-                <h6 style="align-self:center;">What broadband speed can you get?</h6>
-                <span>Our speed checker will show you what speeds you can expect to get with us before commiting to buy one of our packages.</span>
+﻿
+<section class="ds s-pt-70 s-pb-130 s-pt-lg-130 s-pb-lg-160 s-pt-xl-130 s-pb-xl-160 background-gradient2 about-section cover-background" id="about">
+    <div class="container">
+        <div class="d-block d-lg-none divider-5"></div>
+        <div class="row c-gutter-60 align-items-center">
+            <div class="col-xl-6 col-lg-6 col-lg-6 col-xs-12 order-2 order-lg-1 animate animated fadeInLeftBig" data-animation="fadeInLeftBig">
+                <div class="side-image">
+                    <img src="images/about-image.png" width="300" alt="">
+                    <div class="d-block d-lg-none divider-10"></div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-lg-6 col-xs-12 order-1 order-lg-2 animate animated fadeInRightBig" data-animation="fadeInRightBig">
+                <div class="item-content text-center text-lg-left">
+                    <h5 class="fw-200 text-uppercase">We Are</h5>
+                    <h3>Gosport Internet</h3>
+                    <h6 class="fw-500 font-italic">To get started with MaxiCom, please go over all of our plans to let our operators know which one works for you the best!</h6>
+                    <p class="big">
+                        We guarantee high-quality customer support service with high-speed satellite connection all over the world. Enjoy fun family nights and loud friends parties at your place! MaxiCom provides excellent entertainment.
+                    </p>
+                    <div class="d-flex justify-content-between mt-50">
+                        <input class="text-center rounded" style="width:300px; border:inherit; font:inherit; color:inherit;" placeholder="Postcode">
+                        <a class="btn btn-white" href=""><span>Check</span></a>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="col-xl-6 col-lg-5 col-md-5">
-            <GIInput Width="200px;" CustomClass="float-right" Placeholder="Postcode" @ref="Postcode"></GIInput>
-        </div>
     </div>
-    <div class="row">
-        <GIGridColumn Width="12">
-            <GIButton CustomClass="float-right" Margin="3"ButtonText="Check now"></GIButton>
-        </GIGridColumn>
-    </div>
-</GIGridLayout>
-
-@code
-{
-    GIInput Postcode;
-}
+    <div class="d-none d-lg-block divider-35"></div>
+</section>

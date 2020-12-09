@@ -75,13 +75,6 @@ using GIWeb.Shared;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 1 "C:\Users\George\Documents\GIWeb\Shared\Components\GIAvailabilityChecker.razor"
-using GIWeb.Shared.Components;
-
-#line default
-#line hidden
-#nullable disable
     public partial class GIAvailabilityChecker : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -89,14 +82,6 @@ using GIWeb.Shared.Components;
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 18 "C:\Users\George\Documents\GIWeb\Shared\Components\GIAvailabilityChecker.razor"
- 
-    GIInput Postcode;
-
-#line default
-#line hidden
-#nullable disable
     }
 }
 #pragma warning restore 1591

@@ -1,32 +1,24 @@
-﻿
-<div class="page_header_wrapper" style="height: 118px;">
+﻿@using GIWeb.Shared.Components
+
+<div class="header_wrapper" style="height: 118px;">
     <header class="page_header header_logo_center ls header-layout2">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="col-xl-1 d-none d-xl-block">
+                <GIGridColumn Width="1">
                     <ul class="top-includes">
                         <li>
                             <span class="social-icons">
-
-                                @*
-                                    <a href="#" class="fa fa-facebook " title="facebook"></a>
-                                    <a href="#" class="fa fa-twitter " title="twitter"></a>
-                                    <a href="#" class="fa fa-google " title="google"></a>
-                                *@
-
+                                <a href="#" class="fa fa-facebook " title="facebook"></a>
+                                <a href="#" class="fa fa-twitter " title="twitter"></a>
+                                <a href="#" class="fa fa-google " title="google"></a>
                             </span>
                         </li>
                     </ul>
-                </div>
-                <div class="col-xl-10 text-sm-center">
-                    <div class="logo_wrapper">
-                        <a href="/" class="logo">
-                            <span class="logo-text py-20"><strong>Gosport</strong>Internet</span>
-                        </a>
-                    </div>
+                </GIGridColumn>
+                <GIGridColumn Width="3">
                     <!-- main nav start -->
-                    <nav class="top-nav" style="left: 300px;">
-                        <ul class="nav sf-menu">
+                    <nav class="nav float-right">
+                        <ul class="sf-menu">
                             <li>
                                 <a href="/">Home</a><span></span>
                             </li>
@@ -50,17 +42,28 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li>
-                                <a href="/aboutus">About Us</a><span class="menu-item-mobile-toggler"></span>
-                            </li>
-                            <li>
-                                <a href="/help">Help</a><span class="menu-item-mobile-toggler"></span>
-                                <ul margin-top: 5px;">
+                        </ul>
+                    </nav>
+                    <!-- eof main nav -->
+                </GIGridColumn>
+                <GIGridColumn Width="4">
+                    <div class="logo_wrapper">
+                        <a href="/" class="logo">
+                            <span class="logo-text py-20"><strong>Gosport</strong>Internet</span>
+                        </a>
+                    </div>
+                </GIGridColumn>
+                <GIGridColumn Width="3">
+                    <nav class="nav" style="left: 300px;">
+                        <ul class="sf-menu">
+                            <li class="menu-item">
+                                <a href="/aboutus">About Us</a><span class="menu-item"></span>
+                                <ul margin-top: 5px;>
                                     <li>
                                         <a href="/contactus">Contact Us</a>
                                     </li>
                                     <li>
-                                        <a href="/support">Support</a>
+                                        <a href="/ourteam">Our Team</a>
                                     </li>
                                     <li>
                                         <a href="/tos">Terms Of Service</a>
@@ -68,16 +71,12 @@
                                 </ul>
                             </li>
                             <li>
-                                <a target="_blank" href="http://webdesign-finder.com/html/maxicom/">Maxicom</a><span></span>
-                            </li>
-                            <li>
-                                <a target="_blank" href="/componenttest">Components</a><span></span>
+                                <a href="/support">Support</a><span class="menu-item"></span>
                             </li>
                         </ul>
                     </nav>
-                    <!-- eof main nav -->
-                </div>
-                <div class="col-xl-1 text-right d-none d-xl-block">
+                </GIGridColumn>
+                <GIGridColumn Width="1">
                     <ul class="top-includes">
                         <li>
                             <span class="icon-inline">
@@ -92,7 +91,7 @@
                             </span>
                         </li>
                     </ul>
-                </div>
+                </GIGridColumn>
             </div>
         </div>
     </header>

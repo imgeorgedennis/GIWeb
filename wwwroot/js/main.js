@@ -63,8 +63,8 @@ function menuHideExtraElements() {
 					centerLi--;
 				}
 				var $liLeftFromLogo = $menuLisVisible.eq(centerLi);
-				$liLeftFromLogo.after('<li class="sf-logo-li"><a href="#">&nbsp;</a></li>');
-				$headerLogoCenter.find('.sf-logo-li').width(logoWidth);
+				// $liLeftFromLogo.after('<li class="sf-logo-li"><a href="#">&nbsp;</a></li>');
+				// $headerLogoCenter.find('.sf-logo-li').width(logoWidth);
 				var liLeftRightDotX = $liLeftFromLogo.offset().left + $liLeftFromLogo.outerWidth();
 				var logoLeftDotX = windowWidth/2 - logoWidth/2;
 				var menuLeftOffset = liLeftRightDotX - logoLeftDotX;

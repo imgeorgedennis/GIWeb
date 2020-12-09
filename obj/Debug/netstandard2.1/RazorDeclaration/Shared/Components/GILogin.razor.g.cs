@@ -90,7 +90,6 @@ using GIWeb.Shared;
 
     public void AttemptSignIn()
     {
-
         Console.WriteLine("Attempting to signin with credienials: Email= " + Email.GetValue() + " - Password= " + Password.GetValue());
 
         LoginRequest request = new LoginRequest();

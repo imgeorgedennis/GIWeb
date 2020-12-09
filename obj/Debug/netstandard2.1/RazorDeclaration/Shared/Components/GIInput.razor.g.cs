@@ -89,6 +89,9 @@ using GIWeb.Shared;
     public string LabelClass { get; set; } = "";
 
     [Parameter]
+    public string CustomStyle { get; set; } = "";
+
+    [Parameter]
     public string TopMargin { get; set; } = "3";
 
     [Parameter]
