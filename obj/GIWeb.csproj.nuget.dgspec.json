@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\George\\Documents\\GIWeb\\GIWeb.csproj": {}
+    "C:\\Users\\Work\\Documents\\GIWeb\\GIWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\George\\Documents\\GIWeb\\GIWeb.csproj": {
+    "C:\\Users\\Work\\Documents\\GIWeb\\GIWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\George\\Documents\\GIWeb\\GIWeb.csproj",
+        "projectUniqueName": "C:\\Users\\Work\\Documents\\GIWeb\\GIWeb.csproj",
         "projectName": "GIWeb",
-        "projectPath": "C:\\Users\\George\\Documents\\GIWeb\\GIWeb.csproj",
-        "packagesPath": "C:\\Users\\George\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\George\\Documents\\GIWeb\\obj\\",
+        "projectPath": "C:\\Users\\Work\\Documents\\GIWeb\\GIWeb.csproj",
+        "packagesPath": "C:\\Users\\Work\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Work\\Documents\\GIWeb\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\George\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Work\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +29,6 @@
         },
         "frameworks": {
           "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -38,7 +40,6 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
           "dependencies": {
             "LiveSharp": {
               "target": "Package",
@@ -82,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

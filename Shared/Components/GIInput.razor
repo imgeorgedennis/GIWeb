@@ -4,7 +4,7 @@
     {
         <label class="@LabelClass">@LabelText</label>
     }
-    <input id="@Id" class="form-control text-center woocommerce-Input woocommerce-Input--text input-text mt-@TopMargin mb-@BottomMargin  @CustomClass" style="width:@Width; @CustomStyle" value="@Value" placeholder="@Placeholder" @oninput="OnValueChanged" readonly>
+    <input id="@Id" type="@InputFieldType" class="form-control text-center woocommerce-Input woocommerce-Input--text input-text mt-@TopMargin mb-@BottomMargin  @CustomClass" style="width: @Width; @CustomStyle" value="@Value" placeholder="@Placeholder" @oninput="OnValueChanged" readonly>
 }
 else
 {
@@ -12,12 +12,16 @@ else
     {
         <label class="@LabelClass">@LabelText</label>
     }
-    <input id="@Id" class="form-control text-center woocommerce-Input woocommerce-Input--text input-text mt-@TopMargin mb-@BottomMargin  @CustomClass" style="width:@Width; @CustomStyle" value="@Value" placeholder="@Placeholder" @oninput="OnValueChanged">
+    <input id="@Id" type="@InputFieldType" class="form-control text-center woocommerce-Input woocommerce-Input--text input-text mt-@TopMargin mb-@BottomMargin  @CustomClass" style="width: @Width; @CustomStyle" value="@Value" placeholder="@Placeholder" @oninput="OnValueChanged">
 }
+
 
 @code{
     [Parameter]
     public string LabelClass { get; set; } = "";
+
+    [Parameter]
+    public string InputFieldType { get; set; }
 
     [Parameter]
     public string CustomStyle { get; set; } = "";
