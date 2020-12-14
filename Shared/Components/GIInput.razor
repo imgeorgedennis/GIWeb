@@ -1,24 +1,26 @@
 ﻿@if (Disabled)
 {
-    if (ShowLabel)
+    @if (ShowLabel)
     {
-        <label class="@LabelClass">@LabelText</label>
+        <label class="@LabelClass" style="font-size:13px;">@LabelText</label>
     }
-    <input id="@Id" type="@InputFieldType" class="form-control text-center woocommerce-Input woocommerce-Input--text input-text mt-@TopMargin mb-@BottomMargin  @CustomClass" style="width: @Width; @CustomStyle" value="@Value" placeholder="@Placeholder" @oninput="OnValueChanged" readonly>
+    <input id="@Id" type="@InputFieldType" class="form-control text-center woocommerce-Input woocommerce-Input--text input-text mt-@TopMargin mb-@BottomMargin  @CustomClass" style="font-size:13px; color:@FontColour; box-shadow: 0 0px 10px 10px rgba(128, 115, 178, 0.32); border-radius:30px; width: @Width; @CustomStyle" value="@Value" placeholder="@Placeholder" @oninput="OnValueChanged" readonly>
 }
 else
 {
-    if (ShowLabel)
+    @if (ShowLabel)
     {
-        <label class="@LabelClass">@LabelText</label>
+        <label class="@LabelClass" style="font-size:13px;">@LabelText</label>
     }
-    <input id="@Id" type="@InputFieldType" class="form-control text-center woocommerce-Input woocommerce-Input--text input-text mt-@TopMargin mb-@BottomMargin  @CustomClass" style="width: @Width; @CustomStyle" value="@Value" placeholder="@Placeholder" @oninput="OnValueChanged">
+    <input id="@Id" type="@InputFieldType" class="form-control text-center woocommerce-Input woocommerce-Input--text input-text mt-@TopMargin mb-@BottomMargin  @CustomClass" style="font-size: 14px; color:@FontColour; box-shadow: 0 0px 10px 10px rgba(128, 115, 178, 0.32); border-radius: 30px; width: @Width; @CustomStyle" value="@Value" placeholder="@Placeholder" @oninput="OnValueChanged">
 }
-
 
 @code{
     [Parameter]
     public string LabelClass { get; set; } = "";
+
+    [Parameter]
+    public string FontColour { get; set; } = "black";
 
     [Parameter]
     public string InputFieldType { get; set; }

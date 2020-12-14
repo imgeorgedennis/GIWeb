@@ -3,17 +3,14 @@
         <GIGridColumn Width="3">
         </GIGridColumn>
         <GIGridColumn CustomClass="text-center" Width="6">
-            <GIInput Id="login_firstname" @ref="Firstname" Placeholder="First Name" CustomClass="mb-1"></GIInput>
-            <GIInput Id="login_surname"  @ref="Surname" Placeholder="Surname" CustomClass="mb-1"></GIInput>
-            <GIInput Id="login_email"  @ref="Email" Placeholder="Email address" CustomClass="mb-1"></GIInput>
-            <GIInput Id="login_comfirmemail" @ref="ComfirmEmail" Placeholder="Re-enter email" CustomClass="mb-1"></GIInput>
-            <GIInput Id="login_password"  @ref="Password" Placeholder="Password" CustomClass="mb-1"></GIInput>
-            <GIInput Id="login_comfirmpassword"  @ref="ComfirmPassword" Placeholder="Re-enter password" CustomClass="mb-1"></GIInput>
+            <GIInput Id="login_firstname" @ref="Firstname" Placeholder="First Name" BottomMargin="3" ShowLabel="true" LabelText="First Name" LabelClass="float-left" TopMargin="1"></GIInput>
+            <GIInput Id="login_surname"  @ref="Surname" Placeholder="Surname" BottomMargin="3" ShowLabel="true" LabelText="Surname" TopMargin="1" LabelClass="float-left"></GIInput>
+            <GIInput Id="login_email"  @ref="Email" Placeholder="Email address" BottomMargin="3" ShowLabel="true" LabelText="Email" TopMargin="1" LabelClass="float-left"></GIInput>
+            <GIInput Id="login_comfirmemail" @ref="ComfirmEmail" Placeholder="Re-enter email"  BottomMargin="3" ShowLabel="true" LabelText="Comfirm Email" TopMargin="1" LabelClass="float-left"></GIInput>
+            <GIInput Id="login_password"  @ref="Password" Placeholder="Password"  BottomMargin="3" ShowLabel="true" LabelText="Password" TopMargin="1" LabelClass="float-left"></GIInput>
+            <GIInput Id="login_comfirmpassword"  @ref="ComfirmPassword" Placeholder="Re-enter password" BottomMargin="3" ShowLabel="true" LabelText="Comfirm Password" TopMargin="1" LabelClass="float-left"></GIInput>
             <small class="">By clicking "Sign Up" below, you agree to the <a href="/terms_of_use.html">Terms of Service</a> and <a href="/terms_of_use.html">Privacy Policy</a>.</small>
             <GIButton ButtonText="Create Acount" CustomClass="mt-2" Width="150px;"></GIButton>
-            <div>
-                <a href="/login" style="width:150px;" class="woocommerce-Button btn btn-maincolor3 mt-2" role="button"><span>Back</span></a>
-            </div>
         </GIGridColumn>
         <GIGridColumn Width="3"></GIGridColumn>
     </GIGridRow>
@@ -23,11 +20,6 @@
 
     GIInput Firstname, Surname, Email, ComfirmEmail, Password, ComfirmPassword;
     GiCheckbox TermsOfService;
-
-    protected override async Task OnInitializedAsync()
-    {
-
-    }
 
     public void AttemptRegister()
     {

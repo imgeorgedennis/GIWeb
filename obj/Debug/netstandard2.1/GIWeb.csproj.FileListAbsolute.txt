@@ -556,9 +556,6 @@ C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\RazorDeclaration\Shared
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\Razor\Shared\Components\GIDropdown.razor.g.cs
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\RazorDeclaration\Shared\Components\GIAvailabilityChecker.razor.g.cs
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\Razor\Shared\Components\GIAvailabilityChecker.razor.g.cs
-C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\dYX51wgsOYG_6apcxaURp4sgPLDIpArVWI8MRnCPBPw=.hash
-C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\je_J2LLMTUDtIIHpmh2RKkNKtg1jpsRf4_xbD3T9Xuk=.hash
-C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\K2LyNI2wjONe6As3pv3JdKb3TXH3eNq8QThuLvN0R4Q=.hash
 C:\Users\Work\Documents\GIWeb\bin\Debug\netstandard2.1\Properties\launchSettings.json
 C:\Users\Work\Documents\GIWeb\bin\Debug\netstandard2.1\GIWeb.StaticWebAssets.xml
 C:\Users\Work\Documents\GIWeb\bin\Debug\netstandard2.1\GIWeb.dll
@@ -1121,3 +1118,10 @@ C:\Users\Work\Documents\GIWeb\obj\Debug\netstandard2.1\Razor\Pages\AccountDashbo
 C:\Users\Work\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\1Fmfu9-sB9Br57c7ZYOol_WoUz2gdz_en_cDEydsqUY=.hash
 C:\Users\Work\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\Ndmmj_Ky9PT05RrcRHxA_nwsqsm1C7ibWRkjjGEQsLM=.hash
 C:\Users\Work\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\pP50AoOIP0UlKdvmwdPUvLX5_e1BuxyiiFfHdHIv1qw=.hash
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\RazorDeclaration\Pages\AccountDashboard.razor.g.cs
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\Razor\Pages\AccountDashboard.razor.g.cs
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\RazorDeclaration\Pages\ServiceOne.razor.g.cs
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\Razor\Pages\ServiceOne.razor.g.cs
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\PgoMWw3a6X2NvXMDvy0kYlpWPvIcU1GH9q7qjHKvq84=.hash
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\HB8dBVhwcm_UfV5kALoledD1zmQb-HzHvoUxgRKEh_M=.hash
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\VKyJuJ9SC7e1yq0sCf4vwEzEQL_UKWzhXC-VkU0XYRM=.hash
