@@ -1,7 +1,7 @@
 ﻿
 <div style="width:100%;">
     <GIInput @ref="Email" Id="i1" Placeholder="Email" Align="GIInput.Alignment.Center" TopMargin="2" BottomMargin="3" ShowLabel="true" LabelText="Email"></GIInput>
-    <GIInput @ref="Password" Id="i2" Placeholder="Password" Align="GIInput.Alignment.Center" TopMargin="2" ShowLabel="true" LabelText="Password"></GIInput>
+    <GIInput @ref="Password" Id="i2" IsAPassword="true" Placeholder="Password" Align="GIInput.Alignment.Center" TopMargin="2" ShowLabel="true" LabelText="Password"></GIInput>
 
     <GIGridRow>
         <GIGridColumn Width="6">
@@ -11,7 +11,7 @@
             </ul>
         </GIGridColumn>
         <GIGridColumn Width="6">
-            <GIButton ButtonText="Sign in" OnClickEvent="@AttemptSignIn" Width="150px" Colour="GIButton.ButtonColour.Purple" CustomClass="mt-3 float-right"></GIButton>
+           <GIButton ButtonText="Sign in" OnClickEvent="@AttemptSignIn" Width="150px" CustomClass="mt-3 float-right"></GIButton>
         </GIGridColumn>
     </GIGridRow>
 </div>

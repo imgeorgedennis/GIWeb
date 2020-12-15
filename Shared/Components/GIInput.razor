@@ -4,7 +4,7 @@
     {
         <label class="@LabelClass" style="font-size:13px;">@LabelText</label>
     }
-    <input id="@Id" type="@InputFieldType" class="form-control text-center woocommerce-Input woocommerce-Input--text input-text mt-@TopMargin mb-@BottomMargin  @CustomClass" style="font-size:13px; color:@FontColour; box-shadow: 0 0px 10px 10px rgba(128, 115, 178, 0.32); border-radius:30px; width: @Width; @CustomStyle" value="@Value" placeholder="@Placeholder" @oninput="OnValueChanged" readonly>
+    <input id="@Id" type="@IsPassword(IsAPassword)" class="form-control text-center woocommerce-Input woocommerce-Input--text input-text mt-@TopMargin mb-@BottomMargin  @CustomClass" style="font-size:13px; background-color:@BackgroundColor; color:@FontColour; box-shadow: 0 0px 10px 10px rgba(128, 115, 178, 0.32); width: @Width; @CustomStyle" value="@Value" placeholder="@Placeholder" @oninput="OnValueChanged" readonly>
 }
 else
 {
@@ -12,7 +12,7 @@ else
     {
         <label class="@LabelClass" style="font-size:13px;">@LabelText</label>
     }
-    <input id="@Id" type="@InputFieldType" class="form-control text-center woocommerce-Input woocommerce-Input--text input-text mt-@TopMargin mb-@BottomMargin  @CustomClass" style="font-size: 14px; color:@FontColour; box-shadow: 0 0px 10px 10px rgba(128, 115, 178, 0.32); border-radius: 30px; width: @Width; @CustomStyle" value="@Value" placeholder="@Placeholder" @oninput="OnValueChanged">
+    <input id="@Id" type="@IsPassword(IsAPassword)" class="form-control text-center woocommerce-Input woocommerce-Input--text input-text mt-@TopMargin mb-@BottomMargin  @CustomClass" style="font-size:13px; background-color:@BackgroundColor; color:@FontColour; box-shadow: 0 0px 10px 10px rgba(128, 115, 178, 0.32); width: @Width; @CustomStyle" value="@Value" placeholder="@Placeholder" @oninput="OnValueChanged">
 }
 
 @code{
@@ -26,6 +26,9 @@ else
     public string InputFieldType { get; set; }
 
     [Parameter]
+    public string BackgroundColor { get; set; } = "white";
+
+    [Parameter]
     public string CustomStyle { get; set; } = "";
 
     [Parameter]
@@ -36,10 +39,8 @@ else
 
     [Parameter]
     public string Id { get; set; } = "";
-
     [Parameter]
     public bool Disabled { get; set; } = false;
-
     [Parameter]
     public string Placeholder { get; set; } = "";
     [Parameter]
@@ -62,6 +63,20 @@ else
     [Parameter]
     public EventCallback OnInputChanged { get; set; }
 
+    [Parameter]
+    public bool IsAPassword { get; set; } = false;
+
+    public string IsPassword(bool IsPassword)
+    {
+        if (IsPassword == true)
+        {
+            return "password";
+        }
+        else
+        {
+            return "text";
+        }
+    }
 
     public string GetValue()
     {

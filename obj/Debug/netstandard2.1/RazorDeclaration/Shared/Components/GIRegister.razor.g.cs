@@ -89,11 +89,6 @@ using GIWeb.Shared;
     GIInput Firstname, Surname, Email, ComfirmEmail, Password, ComfirmPassword;
     GiCheckbox TermsOfService;
 
-    protected override async Task OnInitializedAsync()
-    {
-
-    }
-
     public void AttemptRegister()
     {
         Console.WriteLine("Firstname: " + Firstname.GetValue() + " - " + "Surname: " + Surname.GetValue() + " - " + "Email: " + Email.GetValue() + " - " + "Comfirm Email: " + ComfirmEmail.GetValue() + " - " + "Password: " + Password.GetValue() + "Comfirm Password: " + ComfirmPassword.GetValue());

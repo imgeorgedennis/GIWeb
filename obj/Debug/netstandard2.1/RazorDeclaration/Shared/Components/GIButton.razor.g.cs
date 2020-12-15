@@ -88,6 +88,14 @@ using GIWeb.Shared;
 
     [Parameter]
     public string CustomClass { get; set; }
+    [Parameter]
+    public string BtnClass { get; set; } = "btn btn-";
+
+    [Parameter]
+    public string Shadow { get; set; }
+
+    [Parameter]
+    public string BackgroundColour { get; set; } = "#866fbd";
 
     [Parameter]
     public string Href { get; set; }
@@ -96,6 +104,9 @@ using GIWeb.Shared;
     public string Id { get; set; }
     [Parameter]
     public string ButtonText { get; set; }
+
+    [Parameter]
+    public string FontColour { get; set; } = "white";
 
     [Parameter]
     public EventCallback OnClickEvent { get; set; }
@@ -115,6 +126,11 @@ using GIWeb.Shared;
     private async Task ButtonClick()
     {
         await OnClickEvent.InvokeAsync(null);
+    }
+
+    private string GetClass()
+    {
+        return BtnClass + GetColour();
     }
 
     private string GetColour()

@@ -95,6 +95,9 @@ using GIWeb.Shared;
     public string InputFieldType { get; set; }
 
     [Parameter]
+    public string BackgroundColor { get; set; } = "white";
+
+    [Parameter]
     public string CustomStyle { get; set; } = "";
 
     [Parameter]
@@ -105,10 +108,8 @@ using GIWeb.Shared;
 
     [Parameter]
     public string Id { get; set; } = "";
-
     [Parameter]
     public bool Disabled { get; set; } = false;
-
     [Parameter]
     public string Placeholder { get; set; } = "";
     [Parameter]
@@ -131,6 +132,20 @@ using GIWeb.Shared;
     [Parameter]
     public EventCallback OnInputChanged { get; set; }
 
+    [Parameter]
+    public bool IsAPassword { get; set; } = false;
+
+    public string IsPassword(bool IsPassword)
+    {
+        if (IsPassword == true)
+        {
+            return "password";
+        }
+        else
+        {
+            return "text";
+        }
+    }
 
     public string GetValue()
     {

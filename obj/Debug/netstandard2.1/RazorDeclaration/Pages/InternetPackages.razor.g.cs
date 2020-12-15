@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace GIWeb.Shared.Components
+namespace GIWeb.Pages
 {
     #line hidden
     using System;
@@ -75,49 +75,14 @@ using GIWeb.Shared;
 #line default
 #line hidden
 #nullable disable
-    public partial class GILogin : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/internet/packages")]
+    public partial class InternetPackages : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 19 "C:\Users\George\Documents\GIWeb\Shared\Components\GILogin.razor"
-       
-
-    GIInput Email, Password;
-
-    public void AttemptSignIn()
-    {
-        Console.WriteLine("Attempting to signin with credienials: Email= " + Email.GetValue() + " - Password= " + Password.GetValue());
-
-        LoginRequest request = new LoginRequest();
-
-        if (Email.GetValue() != null && Email.GetValue().ToString().Contains("@"))
-        {
-            request.Email = Email.GetValue();
-            request.Password = Password.GetValue();
-
-            // Send login request
-        }
-    }
-
-    //protected override async Task OnInitializedAsync()
-    //{
-
-    //}
-
-    public class LoginRequest
-    {
-        public string Email { get; set; }
-        public string Password { get; set; }
-    }
-
-
-#line default
-#line hidden
-#nullable disable
     }
 }
 #pragma warning restore 1591

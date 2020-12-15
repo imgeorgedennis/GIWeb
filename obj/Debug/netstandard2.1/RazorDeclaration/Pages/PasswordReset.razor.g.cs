@@ -112,11 +112,6 @@ using GIWeb.Shared.Components;
         Console.WriteLine(text.ToString());
     }
 
-    //protected override async Task OnInitializedAsync()
-    //{
-
-    //}
-
 #line default
 #line hidden
 #nullable disable

@@ -1122,6 +1122,12 @@ C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\RazorDeclaration\Pages\
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\Razor\Pages\AccountDashboard.razor.g.cs
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\RazorDeclaration\Pages\ServiceOne.razor.g.cs
 C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\Razor\Pages\ServiceOne.razor.g.cs
-C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\PgoMWw3a6X2NvXMDvy0kYlpWPvIcU1GH9q7qjHKvq84=.hash
-C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\HB8dBVhwcm_UfV5kALoledD1zmQb-HzHvoUxgRKEh_M=.hash
-C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\VKyJuJ9SC7e1yq0sCf4vwEzEQL_UKWzhXC-VkU0XYRM=.hash
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\RazorDeclaration\Pages\InternetService.razor.g.cs
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\Razor\Pages\InternetService.razor.g.cs
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Availability.razor.g.cs
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\Razor\Pages\Availability.razor.g.cs
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\RazorDeclaration\Pages\InternetPackages.razor.g.cs
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\Razor\Pages\InternetPackages.razor.g.cs
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\js74nxZtfHZbZfIkR6EdIrBQyzSExMUNQxjC29h1gck=.hash
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\205dNzePCKeBGtfp1iPl1IWZzjfhqNqNuKP0WjSgIts=.hash
+C:\Users\George\Documents\GIWeb\obj\Debug\netstandard2.1\integrity\T-hmwsxfaIz6iEkfKjRaw_Ydn97l5C2zds8-TYlNYmc=.hash
