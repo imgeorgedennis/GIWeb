@@ -8993,11 +8993,11 @@ body.boxed {
 	background-color: #4c4c4c;
 	color: #fff;
 }
-
+input[type="submit"], button
 .ds .btn-maincolor:hover span,
 .ds .btn-maincolor2:hover span,
 .ds .btn-maincolor3:hover span {
-	background: #4c4c4c;
+	background: #ffffff;
 	color: #fff;
 }
 

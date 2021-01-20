@@ -1,5 +1,5 @@
 ﻿
-<button class="@GetClass() p-@Padding m-@Margin @CustomClass" id="@Id" style="width:@Width; background-color:@BackgroundColour; color:@FontColour; border:solid; border-width:1px; border-color:grey;" @onclick="ButtonClick"><a href="@Href" style="color:@FontColour;"><span>@ButtonText</span></a></button>
+<button class="@GetClass() p-@Padding m-@Margin @CustomClass" id="@Id" style="width:@Width; background-color:@BackgroundColour; color:@FontColour; border:solid; border-width:@BorderWidth; border-color:@BorderColor;" @onclick="ButtonClick"><a href="@Href" style="color:@FontColour;"><span>@ButtonText</span></a></button>
 
 @code {
 
@@ -16,7 +16,10 @@
 
     [Parameter]
     public string Href { get; set; }
-
+    [Parameter]
+    public string BorderColor { get; set; } = "#866fbd";
+    [Parameter]
+    public string BorderWidth { get; set; } = "1px";
     [Parameter]
     public string Id { get; set; }
     [Parameter]
