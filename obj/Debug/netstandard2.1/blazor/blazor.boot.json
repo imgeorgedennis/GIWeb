@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "GIWeb.dll": "sha256-7rUGuXiVZ6cQm\/Cf7ewH+YHUXGyidV6nX95kbxj5POQ=",
+      "GIWeb.dll": "sha256-1yHGhYNcznRS\/UnE+YOvSrAdIy7aTTW4ikNFyaAh4bo=",
       "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "sha256-D9y5RXbA\/sEzwk6cnGbGMKQv87bvOEEVycrLUTe0lGU=",
       "netstandard.dll": "sha256-\/zcPVM75OAY+joGVM8yIC1gO1SFYWP1CFERgQ8PJkfA=",
       "System.Xml.Linq.dll": "sha256-IPbQMdJxZXdk8HTlaPyXdQ6Zb82iZLphnM74yO4EURQ=",
@@ -72,7 +72,7 @@
       "LiveSharp.dll": "sha256-6h0rITHiuv6l4pfcsjJJONaQEB90hHBirEwBJe4deAA="
     },
     "pdb": {
-      "GIWeb.pdb": "sha256-D3bBY1lGltoDQ0db0GRyzNIxHthv9Nzmz4wWyDwS208="
+      "GIWeb.pdb": "sha256-HqzDYTFxbvAvPI4FY80zK\/ce2BMy0Qlj4DslKYb2xiQ="
     },
     "runtime": {
       "dotnet.3.2.0.js": "sha256-mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=",
